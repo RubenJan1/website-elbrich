@@ -1,0 +1,42 @@
+body {
+  background-color: #e9e7e1; /* Beige achtergrond */
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #b18c27; /* Goud voor navbar */
+}
+
+.navbar-brand, .nav-link {
+  color: #e9e7e1 !important; /* Beige tekst op goud */
+}
+
+.nav-link:hover, .dropdown-item:hover {
+  color: #dea4bd !important; /* Zachtroze bij hover */
+}
+
+h1 {
+  color: #b18c27; /* Goud voor headings */
+}
+
+.btn-primary {
+  background-color: #b18c27; /* Goud voor knoppen */
+  border-color: #b18c27;
+}
+
+.btn-primary:hover {
+  background-color: #dea4bd; /* Zachtroze bij hover */
+  border-color: #dea4bd;
+}
+
+.container {
+  padding: 20px;
+}
+
+#portfolio-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}

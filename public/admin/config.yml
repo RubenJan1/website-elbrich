@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main # Of je gebruikte branch
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+
+media_folder: "static/uploads" # Map voor geüploade media
+public_folder: "/uploads" # Publieke URL voor media
+
+collections:
+  - name: "who-am-i"
+    label: "Wie ben ik?"
+    folder: "content/who-am-i"
+    create: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Afbeelding", name: "image", widget: "image", required: false }
+
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    fields:
+      - { label: "Categorie", name: "category", widget: "select", options: ["gezinsshoot", "liefdesshoot", "geboorte", "newborn"] }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Beschrijving", name: "description", widget: "text" }
+      - { label: "Afbeelding", name: "image", widget: "image", required: false }
+
+  - name: "reviews"
+    label: "Reacties cliënten"
+    folder: "content/reviews"
+    create: true
+    fields:
+      - { label: "Naam", name: "name", widget: "string" }
+      - { label: "Review", name: "review", widget: "text" }
+
+  - name: "contact"
+    label: "Contact"
+    folder: "content/contact"
+    create: true
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Informatie", name: "info", widget: "text" }
