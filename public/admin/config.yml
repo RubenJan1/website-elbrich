@@ -1,47 +1,67 @@
 backend:
   name: git-gateway
-  branch: main # Of je gebruikte branch
-  commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
+  branch: main
 
-media_folder: "static/uploads" # Map voor geüploade media
-public_folder: "/uploads" # Publieke URL voor media
+media_folder: "public/assets/uploads" # Where media files will be stored
+public_folder: "/assets/uploads"
 
 collections:
-  - name: "who-am-i"
-    label: "Wie ben ik?"
-    folder: "content/who-am-i"
-    create: true
-    fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Afbeelding", name: "image", widget: "image", required: false }
-
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "content/portfolio"
-    create: true
-    fields:
-      - { label: "Categorie", name: "category", widget: "select", options: ["gezinsshoot", "liefdesshoot", "geboorte", "newborn"] }
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Beschrijving", name: "description", widget: "text" }
-      - { label: "Afbeelding", name: "image", widget: "image", required: false }
-
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "public/index.html"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "public/who-am-i.html"
+        label: "Who Am I?"
+        name: "who-am-i"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "public/portfolio.html"
+        label: "Portfolio"
+        name: "portfolio"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Items", name: "items", widget: "list", fields:
+              - { label: "Category", name: "category", widget: "select", options: ["Gezin Shoot", "Liefdes Shoot", "Geboorte", "Newborn"] }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
+            }
   - name: "reviews"
-    label: "Reacties cliënten"
-    folder: "content/reviews"
+    label: "Client Reviews"
+    folder: "public/assets/reviews"
     create: true
     fields:
-      - { label: "Naam", name: "name", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
       - { label: "Review", name: "review", widget: "text" }
-
+  - name: "agenda"
+    label: "Agenda"
+    file: "public/agenda.html"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Dates", name: "dates", widget: "list", fields:
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Available", name: "available", widget: "boolean" }
+        }
+  - name: "pricing"
+    label: "Pricing"
+    file: "public/pricing.html"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Packages", name: "packages", widget: "list", fields:
+          - { label: "Package Name", name: "name", widget: "string" }
+          - { label: "Price", name: "price", widget: "number" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+        }
   - name: "contact"
     label: "Contact"
-    folder: "content/contact"
-    create: true
+    file: "public/contact.html"
     fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Informatie", name: "info", widget: "text" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Phone", name: "phone", widget: "string" }

@@ -1,10 +1,16 @@
+[build]
+  publish = "public"
+  functionsDirectory = ".netlify/functions"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
 
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
+[[headers]]
+  # Optional: Secure the admin path
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
