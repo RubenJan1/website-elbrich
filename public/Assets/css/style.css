@@ -1,8 +1,112 @@
-/* Custom styles */
-.portfolio-item {
-  margin-bottom: 20px;
+/* Custom Styles for Door Bellies Lens */
+body {
+  background-color: #e9e7e1; /* Beige achtergrond */
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
-.portfolio-img {
-  max-width: 100%;
-  height: auto;
+
+:root {
+  --text-gold: #b18c27; /* Goud */
+  --btn-pink: #dea4bd; /* Zachtroze */
+  --bs-primary: #b18c27;
+  --bs-secondary: #dea4bd;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 55px;
+  color: var(--text-gold);
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  border-bottom: 1px solid var(--text-gold);
+  width: 40px;
+}
+
+.text-center .section-title:after {
+  left: calc(50% - 20px);
+}
+
+.hero-section {
+  background: url('/assets/images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-section .hero-content {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section .hero-content {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+.text-gold {
+  color: var(--text-gold) !important;
+}
+
+.btn-pink {
+  background-color: var(--btn-pink);
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-pink:hover {
+  background-color: #c78fa7;
+}
+
+.portfolio-item img {
+  transition: opacity 0.3s ease-out;
+}
+
+.portfolio-item:hover img {
+  opacity: 0.4;
+}
+
+.testimonial {
+  background-color: rgba(222, 164, 189, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.nav-overlay:before,
+.nav-overlay:after {
+  background: var(--bs-primary);
+}
+
+.nav__list-item a {
+  color: #333;
+}
+
+.nav__list-item a:hover {
+  color: var(--text-gold);
+}
+
+.nav-overlay {
+  z-index: 1000;
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+  background-color: var(--text-gold);
+}
+
+.padding-small { padding-top: 2em; padding-bottom: 2em; }
+.padding-medium { padding-top: 4em; padding-bottom: 4em; }
+.padding-large { padding-top: 6em; padding-bottom: 6em; }
+
+@media only screen and (max-width: 768px) {
+  .padding-small, .padding-medium, .padding-large {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
 }
