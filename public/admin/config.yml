@@ -15,23 +15,23 @@ collections:
         fields:
           - { label: "Hero Title", name: "hero-title", widget: "string" }
           - { label: "Hero Text", name: "hero-text", widget: "text" }
-      - file: "index.html"
+      - file: "wie-ben-ik.html"
         label: "Wie ben ik?"
         name: "wie-ben-ik"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "index.html"
+      - file: "portfolio.html"
         label: "Portfolio"
         name: "portfolio"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Items", name: "items", widget: "list", fields:
-              - { label: "Category", name: "category", widget: "select", options: ["Gezin Shoot", "Liefdes Shoot", "Geboorte", "Newborn"] }
+              - { label: "Category", name: "category", widget: "select", options: ["gezin", "liefdes", "geboorte", "newborn"] }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Description", name: "description", widget: "text" }
             }
-      - file: "index.html"
+      - file: "reviews.html"
         label: "Reviews"
         name: "reviews"
         fields:
@@ -40,7 +40,7 @@ collections:
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Author", name: "author", widget: "string" }
             }
-      - file: "index.html"
+      - file: "prijzen.html"
         label: "Prijzen"
         name: "prijzen"
         fields:
@@ -50,7 +50,7 @@ collections:
               - { label: "Price", name: "price", widget: "number" }
               - { label: "Description", name: "description", widget: "text" }
             }
-      - file: "index.html"
+      - file: "agenda.html"
         label: "Agenda"
         name: "agenda"
         fields:
@@ -59,7 +59,7 @@ collections:
               - { label: "Date", name: "date", widget: "datetime" }
               - { label: "Available", name: "available", widget: "boolean" }
             }
-      - file: "index.html"
+      - file: "contact.html"
         label: "Contact"
         name: "contact"
         fields:

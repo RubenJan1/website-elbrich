@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Door Bellies Lens - Portfolio</title>
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="d-none">
+  <label for="menu-toggle" class="menu-btn">
+    <span></span>
+  </label>
+  <nav class="nav-overlay">
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="/">Home</a></li>
+        <li class="nav__list-item"><a href="/wie-ben-ik.html">Wie ben ik?</a></li>
+        <li class="nav__list-item dropdown">
+          <a href="/portfolio.html">Portfolio</a>
+          <ul class="dropdown-menu">
+            <li><a href="/portfolio.html#gezin">Gezin Shoot</a></li>
+            <li><a href="/portfolio.html#liefdes">Liefdes Shoot</a></li>
+            <li><a href="/portfolio.html#geboorte">Geboorte</a></li>
+            <li><a href="/portfolio.html#newborn">Newborn</a></li>
+          </ul>
+        </li>
+        <li class="nav__list-item"><a href="/reviews.html">Reacties</a></li>
+        <li class="nav__list-item"><a href="/prijzen.html">Prijzen</a></li>
+        <li class="nav__list-item"><a href="/agenda.html">Agenda</a></li>
+        <li class="nav__list-item"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="padding-large">
+    <div class="container" data-netlify="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="button-group" id="filters">
+        <a href="#" data-filter="*" class="is-checked">Alles</a>
+        <a href="#" data-filter=".gezin">Gezin Shoot</a>
+        <a href="#" data-filter=".liefdes">Liefdes Shoot</a>
+        <a href="#" data-filter=".geboorte">Geboorte</a>
+        <a href="#" data-filter=".newborn">Newborn</a>
+      </div>
+      <div class="row grid">
+        <div class="col-md-4 portfolio-item gezin">
+          <a href="/assets/images/portfolio-gezin.jpg" class="image-link"><img src="/assets/images/portfolio-gezin.jpg" class="img-fluid" alt="Gezin Shoot"></a>
+          <h4>Gezin Shoot</h4>
+        </div>
+        <div class="col-md-4 portfolio-item liefdes">
+          <a href="/assets/images/portfolio-liefdes.jpg" class="image-link"><img src="/assets/images/portfolio-liefdes.jpg" class="img-fluid" alt="Liefdes Shoot"></a>
+          <h4>Liefdes Shoot</h4>
+        </div>
+        <div class="col-md-4 portfolio-item geboorte">
+          <a href="/assets/images/portfolio-geboorte.jpg" class="image-link"><img src="/assets/images/portfolio-geboorte.jpg" class="img-fluid" alt="Geboorte"></a>
+          <h4>Geboorte</h4>
+        </div>
+        <div class="col-md-4 portfolio-item newborn">
+          <a href="/assets/images/portfolio-newborn.jpg" class="image-link"><img src="/assets/images/portfolio-newborn.jpg" class="img-fluid" alt="Newborn"></a>
+          <h4>Newborn</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white padding-small text-center">
+    <p>© 2025 Door Bellies Lens | <a href="https://instagram.com/doorbellieslens" class="text-gold">Instagram</a></p>
+  </footer>
+
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <input type="text" name="message">
+  </form>
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
