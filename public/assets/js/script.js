@@ -1,117 +1,161 @@
+/*!
+ * Generated using the Bootstrap Customizer (<none>)
+ * Config saved to config.json and <none>
+ */
+
 (function ($) {
-  "use strict";
 
-  // Swiper Slider
-  var initSlider = function () {
-    $('.swiper-carousel').each(function () {
-      var swiper = new Swiper(".swiper-carousel", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: '.swiper-carousel .swiper-right',
-          prevEl: '.swiper-carousel .swiper-left',
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          300: { slidesPerView: 2 },
-          768: { slidesPerView: 2, spaceBetween: 20 },
-          1200: { slidesPerView: 3, spaceBetween: 30 },
-        },
-      });
+	"use strict";
+
+	// ------------------------------------------------------------------------------ //
+	// Overlay Menu Navigation
+	// ------------------------------------------------------------------------------ //
+	var overlayMenu = function () {
+
+		if (!$('.nav-overlay').length) {
+			return false;
+		}
+
+		var body = undefined;
+		var menu = undefined;
+		var menuItems = undefined;
+		var init = function init() {
+			body = document.querySelector('body');
+			menu = document.querySelector('.menu-btn');
+			menuItems = document.querySelectorAll('.nav__list-item');
+			applyListeners();
+		};
+		var applyListeners = function applyListeners() {
+			menu.addEventListener('click', function () {
+				return toggleClass(body, 'nav-active');
+			});
+		};
+		var toggleClass = function toggleClass(element, stringClass) {
+			if (element.classList.contains(stringClass)) element.classList.remove(stringClass); else element.classList.add(stringClass);
+		};
+		init();
+	}
+
+	// init jarallax parallax
+	var initJarallax = function () {
+		jarallax(document.querySelectorAll(".jarallax"));
+
+		jarallax(document.querySelectorAll(".jarallax-keep-img"), {
+			keepImg: true,
+		});
+	}
+
+	// init Chocolat light box
+	var initChocolat = function () {
+		Chocolat(document.querySelectorAll('.image-link'), {
+			imageSize: 'contain',
+			loop: true,
+		})
+	}
+
+	var initSwiper = function () {
+
+		var swiper = new Swiper(".portfolio-carousel", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			loop: true,
+			navigation: {
+				nextEl: ".portfolio-carousel-next",
+				prevEl: ".portfolio-carousel-prev",
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				599: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				980: {
+					slidesPerView: 3,
+					spaceBetween: 5,
+				},
+			},
+		});
+
+		var testimonial_swiper = new Swiper(".testimonial-carousel", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				980: {
+					slidesPerView: 3,
+					spaceBetween: 5,
+				},
+			},
+		});
+
+		var clients_swiper = new Swiper(".clients-carousel", {
+			slidesPerView: 5,
+			spaceBetween: 30,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				980: {
+					slidesPerView: 5,
+					spaceBetween: 5,
+				},
+			},
+		});
+	}
+
+    function initIsotope() {
+        // Initialize Isotope
+        var $container = $('.isotope-container').isotope({
+            itemSelector: '.item',
+            layoutMode: 'masonry'
+        });
+
+        // Active button class management
+        $('.filter-button').on('click', function () {
+            $('.filter-button').removeClass('active');
+            $(this).addClass('active');
+            
+            var filterValue = $(this).attr('data-filter');
+            $container.isotope({ filter: filterValue });
+        });
+    }
+
+    $(document).ready(function () {
+        overlayMenu();
+        initChocolat();
+        initJarallax();
+        initSwiper();
+
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
+
+        // Initialize isotope after all images are loaded
+        $(window).on('load', function() {
+			
+			// Fade out preloader
+            $("#overlayer").fadeOut("slow");
+            $('body').addClass('loaded');
+            initIsotope();
+        });
     });
 
-    $('.swiper-slideshow').each(function () {
-      var swiper = new Swiper(".swiper-slideshow", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        speed: 700,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-slideshow .swiper-right',
-          prevEl: '.swiper-slideshow .swiper-left',
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    });
-  };
 
-  // init Isotope
-  var initIsotope = function () {
-    $('.grid').each(function () {
-      var $buttonGroup = $('.button-group');
-      var $checked = $buttonGroup.find('.is-checked');
-      var filterValue = $checked.attr('data-filter');
-
-      var $grid = $('.grid').isotope({
-        itemSelector: '.portfolio-item',
-        filter: filterValue,
-      });
-
-      $grid.on('arrangeComplete', function () {
-        // AOS.refresh(); // AOS niet gebruikt, verwijderd
-      });
-
-      $('.button-group').on('click', 'a', function (e) {
-        e.preventDefault();
-        filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-      });
-    });
-  };
-
-  var initScrollNav = function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 200) {
-      $('.bg-color').addClass("bg-secondary");
-    } else {
-      $('.bg-color').removeClass("bg-secondary");
-    }
-  };
-
-  // init Chocolat light box
-  var initChocolat = function () {
-    if (typeof Chocolat !== 'undefined') {
-      Chocolat(document.querySelectorAll('.image-link'), {
-        imageSize: 'contain',
-        loop: true,
-      });
-    }
-  };
-
-  // Overlay Menu Navigation
-  var overlayMenu = function () {
-    if (!$('.nav-overlay').length) return false;
-
-    var body = document.querySelector('body');
-    var menu = document.querySelector('.menu-btn');
-    if (menu) {
-      menu.addEventListener('click', function () {
-        body.classList.toggle('nav-active');
-      });
-    }
-  };
-
-  $(document).ready(function () {
-    initSlider();
-    initScrollNav();
-    overlayMenu();
-    initChocolat();
-    // AOS.init verwijderd, geen AOS gebruikt
-  });
-
-  $(window).load(function () {
-    initIsotope();
-  });
-
-  $(window).scroll(function () {
-    initScrollNav();
-  });
 })(jQuery);
