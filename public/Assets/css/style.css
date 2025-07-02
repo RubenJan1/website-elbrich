@@ -21,9 +21,7 @@ CSS STRUCTURE:
 
 --------------------------------------------------------------*/
 body {
-
-  background-color: #f0ece5;
-
+  background-color: #e9e7e1; /* Beige achtergrondtint */
 
   --heading-font: "Abril Fatface", serif;
   --heading-font-weight: 400;
@@ -40,30 +38,37 @@ body {
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.7;
   --bs-body-color: #222222;
-  --bs-body-color-rgb: 143, 143, 143;
+  --bs-body-color-rgb: 34, 34, 34;
 
+  /* Jouw kleuren */
+  --bs-primary: #b18c27;           /* Goud */
+  --bs-primary-dark: #967518;      /* Donkere variant van goud */
+  --bs-secondary: #e9e7e1;         /* Beige */
+  --bs-tertiary: #dea4bd;          /* Zachtroze (eigen toevoeging voor subtiele details) */
 
-  --bs-primary: #351915;
-  --bs-primary-dark: #520a00;
-  --bs-secondary: #f0ece5;
-  --bs-black: #111;
-  --bs-light: #F1F1F0;
+  /* Neutrale kleuren */
+  --bs-black: #111111;
+  --bs-light: #f1f1f0;
   --bs-dark: #212529;
   --bs-gray: #9aa1a7;
   --bs-gray-dark: #51565b;
 
-  --bs-primary-rgb: 53, 25, 21;
-  --bs-secondary-rgb: 240, 236, 229;
+  /* RGB-kleuren */
+  --bs-primary-rgb: 177, 140, 39;
+  --bs-secondary-rgb: 233, 231, 225;
   --bs-black-rgb: 17, 17, 17;
   --bs-light-rgb: 241, 241, 240;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-tertiary-rgb: 222, 164, 189;
 
+  /* Links */
   --bs-link-color: var(--bs-dark);
-  --bs-link-color-rgb: 17, 17, 17;
+  --bs-link-color-rgb: 33, 37, 41;
   --bs-link-decoration: underline;
   --bs-link-hover-color: var(--bs-primary);
-  --bs-link-hover-color-rgb: 17, 17, 17;
+  --bs-link-hover-color-rgb: 177, 140, 39;
 }
+
 
 .display-1,
 .display-2,
