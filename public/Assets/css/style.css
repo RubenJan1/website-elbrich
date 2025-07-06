@@ -170,6 +170,55 @@ a {
     justify-content: center;
     text-align: center;
 }
+
+
+/*----- 6.5 Portfolio Homepage and reviews
+--------------------------------------------------------------*/
+    .padding-large {
+      padding: 4rem 0;
+    }
+    .portfolio-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .swiper-button {
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: #000;
+      padding: 0.5rem 1rem;
+      background: none;
+      border: none;
+    }
+    .swiper-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+
+        .padding-large {
+      padding: 4rem 0;
+    }
+    .bg-grey {
+      background-color: #f8f9fa;
+    }
+    .align-center {
+      text-align: center;
+    }
+    .dark {
+      color: #212529;
+    }
+    .testimonials-inner {
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      padding: 1.5rem;
+    }
+    .swiper-pagination {
+      position: static;
+      margin-top: 1.5rem;
+    }
+
+
 /* - Section Padding
 --------------------------------------------------------------*/
 
