@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "pages"
+    label: "Pagina's"
+    folder: "content/pages"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Pagina ID", name: "id", widget: "hidden", default: "page" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+      - { label: "Inhoud", name: "body", widget: "markdown", required: false }
+      - label: "Secties"
+        name: "sections"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Sectie Titel", name: "section_title", widget: "string" }
+          - { label: "Sectie Inhoud", name: "section_content", widget: "markdown", required: false }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Item Titel", name: "item_title", widget: "string", required: false }
+              - { label: "Item Beschrijving", name: "item_description", widget: "markdown", required: false }
+              - { label: "Prijs", name: "price", widget: "string", required: false }
+              - { label: "Details", name: "details", widget: "list", required: false, fields: [{ label: "Detail", name: "detail", widget: "string" }] }
+      - label: "FAQ's"
+        name: "faqs"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Vraag", name: "question", widget: "string" }
+          - { label: "Antwoord", name: "answer", widget: "markdown" }
+      - label: "Contactgegevens"
+        name: "contact_info"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "E-mail", name: "email", widget: "string", required: false }
+          - { label: "Telefoon", name: "phone", widget: "string", required: false }
+          - { label: "Adres", name: "address", widget: "string", required: false }
+      - label: "Beschikbaarheid"
+        name: "availability"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Week", name: "week", widget: "string" }
+          - { label: "Dagen", name: "days", widget: "list", fields: [{ label: "Dag", name: "day", widget: "string" }, { label: "Status", name: "status", widget: "string" }] }
