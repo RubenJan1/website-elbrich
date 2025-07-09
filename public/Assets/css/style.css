@@ -19,10 +19,10 @@ body {
   --bs-body-color-rgb: 34, 34, 34;
 
   /* Jouw kleuren */
-  --bs-primary: #b18c27;           /* Goud */
-  --bs-primary-dark: #967518;      /* Donkere variant van goud */
+  --bs-primary: #dea4bd;           /* Poederroze (ipv goud) */
+  --bs-primary-dark: #c78da7;      /* Donkere variant van poederroze */
   --bs-secondary: #e9e7e1;         /* Beige */
-  --bs-tertiary: #dea4bd;          /* Zachtroze (eigen toevoeging voor subtiele details) */
+  --bs-tertiary: #dea4bd;          /* Zachtroze */
 
   /* Neutrale kleuren */
   --bs-black: #111111;
@@ -32,22 +32,22 @@ body {
   --bs-gray-dark: #51565b;
 
   /* RGB-kleuren */
-  --bs-primary-rgb: 177, 140, 39;
+  --bs-primary-rgb: 222, 164, 189;     /* RGB van poederroze */
   --bs-secondary-rgb: 233, 231, 225;
   --bs-third-rgb: 222, 164, 189;
   --bs-black-rgb: 17, 17, 17;
   --bs-light-rgb: 241, 241, 240;
   --bs-dark-rgb: 33, 37, 41;
   --bs-tertiary-rgb: 222, 164, 189;
-  
 
   /* Links */
   --bs-link-color: var(--bs-dark);
   --bs-link-color-rgb: 33, 37, 41;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: var(--bs-primary);
-  --bs-link-hover-color-rgb: 177, 140, 39;
+  --bs-link-hover-color: var(--bs-primary); /* Hover nu ook poederroze */
+  --bs-link-hover-color-rgb: 222, 164, 189;
 }
+
 
 
 .display-1,
