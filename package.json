@@ -12,6 +12,8 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "bundler": "^0.8.0",
+    "jekyll": "^3.0.0-beta1",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1"
   }
