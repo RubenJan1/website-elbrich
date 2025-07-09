@@ -170,7 +170,205 @@ a {
     justify-content: center;
     text-align: center;
 }
+/* Aanpassingen voor de Contact-pagina */
+.contact-form .form-control,
+.contact-form .form-select {
+    background-color: var(--bs-secondary); /* Beige achtergrond */
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #333;
+}
 
+.contact-form .form-label {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: var(--bs-primary); /* Poederroze */
+    font-size: 1.1rem;
+}
+
+.contact-form .btn-primary {
+    padding: 0.75rem 2rem;
+    font-family: var(--bs-body-font-family); /* Poppins */
+}
+
+.contact-form .nav-tabs {
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.contact-form .nav-tabs .nav-link {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: none;
+}
+
+.contact-form .nav-tabs .nav-link.active {
+    background-color: var(--bs-primary); /* Poederroze */
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.contact-form .nav-tabs .nav-link:hover {
+    background-color: var(--bs-secondary);
+    color: #333;
+}
+
+.contact-info {
+    background-color: var(--bs-primary); /* Poederroze */
+}
+
+.contact-info h5 {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.faq-section .accordion-item {
+    background-color: var(--bs-secondary); /* Beige achtergrond */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.faq-section .accordion-button {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: var(--bs-primary); /* Poederroze */
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: var(--bs-secondary);
+}
+
+.faq-section .accordion-body {
+    font-family: var(--bs-body-font-family); /* Poppins */
+    color: #333;
+}
+
+
+/* Aanpassingen voor de Agenda-pagina */
+.availability {
+    background-color: var(--bs-primary); /* Poederroze */
+}
+
+.availability .section-title-light {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+}
+
+.availability .lead {
+    font-family: var(--bs-body-font-family); /* Poppins */
+}
+
+.calendar-section .table {
+    background-color: var(--bs-secondary); /* Beige */
+    border-radius: 5px;
+}
+
+.calendar-section .table th {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    font-size: 1.2rem;
+}
+
+.calendar-section .table td {
+    font-family: var(--bs-body-font-family); /* Poppins */
+    font-size: 1rem;
+}
+
+.calendar-section .btn-primary {
+    padding: 0.75rem 2rem;
+    font-family: var(--bs-body-font-family); /* Poppins */
+}
+
+/* Bestaande stijlen voor consistentie */
+.contact-form .form-control,
+.contact-form .form-select {
+    background-color: var(--bs-secondary); /* Beige achtergrond */
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #333;
+}
+
+.contact-form .form-label {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: var(--bs-primary); /* Poederroze */
+    font-size: 1.1rem;
+}
+
+.contact-form .btn-primary {
+    padding: 0.75rem 2rem;
+    font-family: var(--bs-body-font-family); /* Poppins */
+}
+
+.contact-form .nav-tabs {
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.contact-form .nav-tabs .nav-link {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border: none;
+}
+
+.contact-form .nav-tabs .nav-link.active {
+    background-color: var(--bs-primary); /* Poederroze */
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.contact-form .nav-tabs .nav-link:hover {
+    background-color: var(--bs-secondary);
+    color: #333;
+}
+
+.contact-info {
+    background-color: var(--bs-primary); /* Poederroze */
+}
+
+.contact-info h5 {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.faq-section .accordion-item {
+    background-color: var(--bs-secondary); /* Beige achtergrond */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.faq-section .accordion-button {
+    font-family: var(--bs-heading-font-family); /* Abril Fatface */
+    color: var(--bs-primary); /* Poederroze */
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: var(--bs-secondary);
+}
+
+.faq-section .accordion-body {
+    font-family: var(--bs-body-font-family); /* Poppins */
+    color: #333;
+}
 
 /*----- 6.5 Portfolio Homepage and reviews
 --------------------------------------------------------------*/
