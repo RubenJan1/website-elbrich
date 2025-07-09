@@ -1,182 +1,86 @@
+---
+title: Prijzen
+subtitle: Kies het perfecte pakket voor jouw herinneringen
+sections:
+  - section_title: Onze Fotografie Pakketten
+    section_content: Kies een pakket dat past bij jouw wensen. Elk pakket is ontworpen om jouw speciale momenten prachtig vast te leggen.
+    items:
+      - item_title: Basis Pakket
+        item_description: Perfect voor een korte, maar mooie fotosessie.
+        price: €150
+        details:
+          - 1 uur fotografie
+          - 10 bewerkte digitale foto’s
+          - Online galerij
+          - Keuze uit gezinsshoot of liefdesshoot
+      - item_title: Standaard Pakket
+        item_description: Een uitgebreide sessie voor onvergetelijke momenten.
+        price: €250
+        details:
+          - 2 uur fotografie
+          - 20 bewerkte digitale foto’s
+          - Online galerij
+          - Keuze uit gezinsshoot, liefdesshoot of newborn
+          - 1 locatie naar keuze
+      - item_title: Luxe Pakket
+        item_description: Voor wie het allerbeste wil, inclusief extra’s.
+        price: €400
+        details:
+          - 3 uur fotografie
+          - 30 bewerkte digitale foto’s
+          - Online galerij
+          - Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn
+          - Meerdere locaties mogelijk
+          - Luxe fotoalbum (20x20 cm)
+---
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 <head>
-    <title>Prijzen - Doorbellieslens Fotografie</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="TemplatesJungle">
-    <meta name="keywords" content="Fotografie, Portfolio, Gezinsshoot, Liefdesshoot, Geboorte, Newborn, Prijzen">
-    <meta name="description" content="Ontdek de prijzen en pakketten van Doorbellieslens Fotografie voor gezinsshoots, liefdesshoots, geboorte- en newbornfotografie.">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/vendor.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}} - Doorbellieslens</title>
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-    <!-- Navigatie -->
-    <div class="nav nav-overlay">
-        <div class="nav__content">
-            <ul class="nav__list">
-                <li class="nav__list-item mb-2" id="home-center"><a href="index.html">Home</a></li>
-                <li class="nav__list-item mb-2 dropdown">
-                    <span class="dropdown-toggle" style="color: rgb(75, 75, 75);"><a href="portfolio.html">Portfolio</a></span>
-                    <ul class="dropdown-sublist" id="dropdown-margin">
-                        <li style="font-size: 60%;"><a href="portfolio.html#gezinsshoot">Gezinsshoot</a></li>
-                        <li style="font-size: 60%;"><a href="portfolio.html#liefdesshoot">Liefdesshoot</a></li>
-                        <li style="font-size: 60%;"><a href="portfolio.html#geboorte">Geboorte</a></li>
-                        <li style="font-size: 60%;"><a href="portfolio.html#newborn">Newborn</a></li>
-                    </ul>
-                </li>
-                <li class="nav__list-item mb-2"><a href="wie-ben-ik.html">Wie ben ik</a></li>
-                <li class="nav__list-item mb-2 active-nav"><a href="prijzen.html">Prijzen</a></li>
-                <li class="nav__list-item mb-2"><a href="agenda.html">Agenda</a></li>
-                <li class="nav__list-item mb-2"><a href="contact.html">Contact</a></li>
-                <li class="nav__list-item mb-2"><a href="privacy.html">Privacybeleid</a></li>
-            </ul>
-        </div>
-    </div>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/wie-ben-ik.html">Wie ben ik</a>
+    <a href="/prijzen.html">Prijzen</a>
+    <a href="/agenda.html">Agenda</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacybeleid.html">Privacybeleid</a>
+  </nav>
 
-    <header id="header">
-        <div class="header-wrap d-flex align-items-center justify-content-between p-3" data-aos="fade">
-            <div class="main-logo">
-                <a href="index.html"><img src="images/main-logo.png" title="Doorbellieslens Fotografie"></a>
-            </div>
-            <nav id="navbar">
-                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-btn" for="menu-toggle">
-                    <span></span>
-                </label>
-            </nav>
-        </div>
-    </header>
+  <section>
+    <h1>{{title}}</h1>
+    {% if subtitle %}<h2>{{subtitle}}</h2>{% endif %}
+    {% if body %}<div>{{body | markdownify}}</div>{% endif %}
+    {% for section in sections %}
+      <h3>{{section.section_title}}</h3>
+      {% if section.section_content %}<div>{{section.section_content | markdownify}}</div>{% endif %}
+      {% if section.items %}
+        <ul>
+          {% for item in section.items %}
+            <li>
+              <h4>{{item.item_title}}{% if item.price %} - {{item.price}}{% endif %}</h4>
+              {% if item.item_description %}<p>{{item.item_description | markdownify}}</p>{% endif %}
+              {% if item.details %}
+                <ul>
+                  {% for detail in item.details %}
+                    <li>{{detail}}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </section>
 
-    <!-- Banner Section -->
-    <section class="banner">
-        <div class="banner-overlay">
-            <div>
-                <h1 class="display-4 text-white">Prijzen</h1>
-                <h4 class="lead text-white">Kies het perfecte pakket voor jouw herinneringen</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prijzen Section -->
-    <section id="pricing" class="pricing-section padding-large">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <h3 class="section-title display-6">Onze Fotografie Pakketten</h3>
-                <p class="lead">Kies een pakket dat past bij jouw wensen. Elk pakket is ontworpen om jouw speciale momenten prachtig vast te leggen.</p>
-            </div>
-            <div class="row g-4">
-                <!-- Pakket 1: Basis -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Basis Pakket</h4>
-                            <h5 class="card-price">€150</h5>
-                            <p class="card-text">Perfect voor een korte, maar mooie fotosessie.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>1 uur fotografie</li>
-                                <li>10 bewerkte digitale foto’s</li>
-                                <li>Online galerij</li>
-                                <li>Keuze uit gezinsshoot of liefdesshoot</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary mt-4">Boek nu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pakket 2: Standaard -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Standaard Pakket</h4>
-                            <h5 class="card-price">€250</h5>
-                            <p class="card-text">Een uitgebreide sessie voor onvergetelijke momenten.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>2 uur fotografie</li>
-                                <li>20 bewerkte digitale foto’s</li>
-                                <li>Online galerij</li>
-                                <li>Keuze uit gezinsshoot, liefdesshoot of newborn</li>
-                                <li>1 locatie naar keuze</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary mt-4">Boek nu</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pakket 3: Luxe -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Luxe Pakket</h4>
-                            <h5 class="card-price">€400</h5>
-                            <p class="card-text">Voor wie het allerbeste wil, inclusief extra’s.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li>3 uur fotografie</li>
-                                <li>30 bewerkte digitale foto’s</li>
-                                <li>Online galerij</li>
-                                <li>Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn</li>
-                                <li>Meerdere locaties mogelijk</li>
-                                <li>Luxe fotoalbum (20x20 cm)</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary mt-4">Boek nu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer" class="bg-primary">
-        <div class="container padding-large text-white text-white-50">
-            <div class="row">
-                <div class="footer-menu col-md-4">
-                    <h3 class="widget-title section-title-light">Get In Touch</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:contact@doorbellieslens.com">contact@doorbellieslens.com</a></li>
-                        <li>(355)-202-234-0457</li>
-                    </ul>
-                </div>
-                <div class="footer-menu col-md-4">
-                    <h3 class="widget-title section-title-light">Where’s my office?</h3>
-                    <ul class="list-unstyled" id="footer-menu">
-                        <li>2489 Locust Court, Bolsward</li>
-                        <li>3927 Red Maple Drive, Bolsward</li>
-                    </ul>
-                </div>
-                <div class="footer-menu social-links col-md-4">
-                    <h3 class="widget-title section-title-light">My social links</h3>
-                    <ul class="list-unstyled d-flex gap-4">
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#instagram"></use></svg></a></li>
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#facebook"></use></svg></a></li>
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#twitter"></use></svg></a></li>
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#pinterest"></use></svg></a></li>
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#youtube"></use></svg></a></li>
-                        <li><a href="#"><svg class="" width="30" height="30"><use xlink:href="#dribble"></use></svg></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom border-top">
-            <div class="container text-white text-white-50">
-                <div class="copyright text-center py-4">
-                    <p class="m-0">© 2025 Doorbellieslens. HTML Template by: <a href="http://www.templatesjungle.com/" class="text-decoration-underline">TemplatesJungle</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+  <footer>
+    <p>© 2025 Doorbellieslens</p>
+  </footer>
 </body>
 </html>

@@ -1,55 +1,136 @@
 backend:
   name: git-gateway
-  branch: main
-
+  branch: main 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
   - name: "pages"
     label: "Pagina's"
-    folder: "content/pages"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Pagina ID", name: "id", widget: "hidden", default: "page" }
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
-      - { label: "Inhoud", name: "body", widget: "markdown", required: false }
-      - label: "Secties"
-        name: "sections"
-        widget: "list"
-        required: false
+    files:
+      - file: "public/index.html"
+        label: "Home"
+        name: "index"
         fields:
-          - { label: "Sectie Titel", name: "section_title", widget: "string" }
-          - { label: "Sectie Inhoud", name: "section_content", widget: "markdown", required: false }
-          - label: "Items"
-            name: "items"
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - { label: "Hoofdinhoud", name: "body", widget: "markdown" }
+          - label: "Secties"
+            name: "sections"
             widget: "list"
-            required: false
             fields:
-              - { label: "Item Titel", name: "item_title", widget: "string", required: false }
-              - { label: "Item Beschrijving", name: "item_description", widget: "markdown", required: false }
-              - { label: "Prijs", name: "price", widget: "string", required: false }
-              - { label: "Details", name: "details", widget: "list", required: false, fields: [{ label: "Detail", name: "detail", widget: "string" }] }
-      - label: "FAQ's"
-        name: "faqs"
-        widget: "list"
-        required: false
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Item Titel", name: "item_title", widget: "string" }
+                  - { label: "Item Beschrijving", name: "item_description", widget: "markdown" }
+                  - { label: "Prijs", name: "price", widget: "string", required: false }
+                  - label: "Details"
+                    name: "details"
+                    widget: "list"
+                    fields:
+                      - { label: "Detail", name: "detail", widget: "string" }
+      - file: "public/portfolio.html"
+        label: "Portfolio"
+        name: "portfolio"
         fields:
-          - { label: "Vraag", name: "question", widget: "string" }
-          - { label: "Antwoord", name: "answer", widget: "markdown" }
-      - label: "Contactgegevens"
-        name: "contact_info"
-        widget: "object"
-        required: false
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - { label: "Hoofdinhoud", name: "body", widget: "markdown" }
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Item Titel", name: "item_title", widget: "string" }
+      - file: "public/wie-ben-ik.html"
+        label: "Wie ben ik"
+        name: "wie-ben-ik"
         fields:
-          - { label: "E-mail", name: "email", widget: "string", required: false }
-          - { label: "Telefoon", name: "phone", widget: "string", required: false }
-          - { label: "Adres", name: "address", widget: "string", required: false }
-      - label: "Beschikbaarheid"
-        name: "availability"
-        widget: "list"
-        required: false
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+      - file: "public/prijzen.html"
+        label: "Prijzen"
+        name: "prijzen"
         fields:
-          - { label: "Week", name: "week", widget: "string" }
-          - { label: "Dagen", name: "days", widget: "list", fields: [{ label: "Dag", name: "day", widget: "string" }, { label: "Status", name: "status", widget: "string" }] }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Item Titel", name: "item_title", widget: "string" }
+                  - { label: "Item Beschrijving", name: "item_description", widget: "markdown" }
+                  - { label: "Prijs", name: "price", widget: "string" }
+                  - label: "Details"
+                    name: "details"
+                    widget: "list"
+                    fields:
+                      - { label: "Detail", name: "detail", widget: "string" }
+      - file: "public/agenda.html"
+        label: "Agenda"
+        name: "agenda"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+          - label: "Beschikbaarheid"
+            name: "availability"
+            widget: "list"
+            fields:
+              - { label: "Week", name: "week", widget: "string" }
+              - label: "Dagen"
+                name: "days"
+                widget: "list"
+                fields:
+                  - { label: "Dag", name: "day", widget: "string" }
+                  - { label: "Status", name: "status", widget: "string" }
+      - file: "public/contact.html"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Subtitel", name: "subtitle", widget: "string", required: false }
+          - label: "Secties"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Sectie Titel", name: "section_title", widget: "string" }
+              - { label: "Sectie Inhoud", name: "section_content", widget: "markdown" }
+          - label: "FAQ's"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - { label: "Vraag", name: "question", widget: "string" }
+              - { label: "Antwoord", name: "answer", widget: "markdown" }
+          - label: "Contactgegevens"
+            name: "contact_info"
+            widget: "object"
+            fields:
+              - { label: "E-mail", name: "email", widget: "string" }
+              - { label: "Telefoon", name: "phone", widget: "string" }
+              - { label: "Adres", name: "address", widget: "string" }
