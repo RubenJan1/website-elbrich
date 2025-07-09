@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main 
+  branch: main  # Wijzig naar 'master' als je branch anders is
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 collections:
@@ -26,12 +26,6 @@ collections:
                 fields:
                   - { label: "Item Titel", name: "item_title", widget: "string" }
                   - { label: "Item Beschrijving", name: "item_description", widget: "markdown" }
-                  - { label: "Prijs", name: "price", widget: "string", required: false }
-                  - label: "Details"
-                    name: "details"
-                    widget: "list"
-                    fields:
-                      - { label: "Detail", name: "detail", widget: "string" }
       - file: "public/portfolio.html"
         label: "Portfolio"
         name: "portfolio"
