@@ -1,0 +1,25 @@
+{
+  "header_title": "Wie ben ik",
+  "header_description": "Ontmoet de fotograaf achter Doorbellieslens",
+  "about_title": "Hoi, ik ben Elbrich!",
+  "about_description_1": "Ik ben een gepassioneerde fotograaf uit Bolsward, met een liefde voor het vastleggen van echte, pure momenten. Of het nu gaat om een gezellige gezinsshoot, een romantische liefdesshoot, een bijzondere geboorte, of een tedere newborn-sessie, ik vind het prachtig om jullie verhaal te vertellen door mijn lens.",
+  "about_description_2": "Mijn stijl is warm, natuurlijk en tijdloos. Ik geloof dat de mooiste foto’s ontstaan uit spontaniteit en oprechte emoties. Met mijn camera wil ik niet alleen mooie beelden maken, maar ook herinneringen die je voor altijd koestert.",
+  "about_description_3": "In mijn vrije tijd geniet ik van wandelingen in de natuur, een goede kop koffie en het ontdekken van nieuwe plekken die inspireren. Ik kijk ernaar uit om samen met jou iets moois te creëren!",
+  "about_button": "Neem contact op",
+  "get_in_touch_title": "Get In Touch",
+  "contact_email": "contact@doorbellieslens.com",
+  "contact_phone": "(355)-202-234-0457",
+  "office_title": "Where’s my office?",
+  "office_address_1": "2489 Locust Court, Bolsward",
+  "office_address_2": "3927 Red Maple Drive, Bolsward",
+  "social_links_title": "My social links",
+  "social_links": [
+    { "platform": "Facebook", "url": "#" },
+    { "platform": "Twitter", "url": "#" },
+    { "platform": "Instagram", "url": "#" },
+    { "platform": "LinkedIn", "url": "#" },
+    { "platform": "Pinterest", "url": "#" },
+    { "platform": "YouTube", "url": "#" }
+  ],
+  "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
+}

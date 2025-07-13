@@ -1,0 +1,63 @@
+{
+  "header_title": "Prijzen",
+  "header_description": "Kies het perfecte pakket voor jouw herinneringen",
+  "packages_title": "Onze Fotografie Pakketten",
+  "packages_description": "Kies een pakket dat past bij jouw wensen. Elk pakket is ontworpen om jouw speciale momenten prachtig vast te leggen.",
+  "packages": [
+    {
+      "title": "Basis Pakket",
+      "price": "€150",
+      "description": "Perfect voor een korte, maar mooie fotosessie.",
+      "details": [
+        "1 uur fotografie",
+        "10 bewerkte digitale foto’s",
+        "Online galerij",
+        "Keuze uit gezinsshoot of liefdesshoot"
+      ],
+      "button": "Boek nu"
+    },
+    {
+      "title": "Standaard Pakket",
+      "price": "€250",
+      "description": "Een uitgebreide sessie voor onvergetelijke momenten.",
+      "details": [
+        "2 uur fotografie",
+        "20 bewerkte digitale foto’s",
+        "Online galerij",
+        "Keuze uit gezinsshoot, liefdesshoot of newborn",
+        "1 locatie naar keuze"
+      ],
+      "button": "Boek nu"
+    },
+    {
+      "title": "Luxe Pakket",
+      "price": "€400",
+      "description": "Voor wie het allerbeste wil, inclusief extra’s.",
+      "details": [
+        "3 uur fotografie",
+        "30 bewerkte digitale foto’s",
+        "Online galerij",
+        "Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn",
+        "Meerdere locaties mogelijk",
+        "Luxe fotoalbum (20x20 cm)"
+      ],
+      "button": "Boek nu"
+    }
+  ],
+  "get_in_touch_title": "Get In Touch",
+  "contact_email": "contact@doorbellieslens.com",
+  "contact_phone": "(355)-202-234-0457",
+  "office_title": "Where’s my office?",
+  "office_address_1": "2489 Locust Court, Bolsward",
+  "office_address_2": "3927 Red Maple Drive, Bolsward",
+  "social_links_title": "My social links",
+  "social_links": [
+    { "platform": "Facebook", "url": "#" },
+    { "platform": "Twitter", "url": "#" },
+    { "platform": "Instagram", "url": "#" },
+    { "platform": "LinkedIn", "url": "#" },
+    { "platform": "Pinterest", "url": "#" },
+    { "platform": "YouTube", "url": "#" }
+  ],
+  "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
+}

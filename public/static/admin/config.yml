@@ -1,0 +1,274 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "index"
+    label: "Index Page"
+    files:
+      - file: "content/index.json"
+        label: "Index Page Content"
+        name: "index"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Doorbellieslens - Fotografie" }
+          - { label: "Header Location", name: "header_location", widget: "string", default: "Bolsward, NL" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Gun jezelf een moment voor jou. Een shoot waarin je even stilstaat, straalt en voelt: dit ben ik. Een Liefde voor jezelf shoot mag je altijd boeken omdat jij het waard bent om gezien te worden." }
+          - { label: "Header Button", name: "header_button", widget: "string", default: "Huur mij in" }
+          - { label: "About Title", name: "about_title", widget: "string", default: "Over mij" }
+          - { label: "About Description 1", name: "about_description_1", widget: "text", default: "Hello! I’m Luna, a passionate freelance photographer with a love for capturing emotion, light, and storytelling through the lens. Whether it's serene landscapes, candid portraits, or styled editorial shots — I aim to freeze time and create timeless visual experiences." }
+          - { label: "About Description 2", name: "about_description_2", widget: "text", default: "With a deep appreciation for natural light and minimal aesthetics, my work reflects a clean yet expressive style. I’m always inspired by the little details, the in-between moments, and the beauty found in everyday life. Let’s tell your story through photography." }
+          - { label: "About Button", name: "about_button", widget: "string", default: "Meer over mij" }
+          - { label: "Projects Title", name: "projects_title", widget: "string", default: "Recent Projects" }
+          - { label: "Projects View All", name: "projects_view_all", widget: "string", default: "Bekijk hier al mijn werk" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+          - { label: "Services Title", name: "services_title", widget: "string", default: "Diensten" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - { label: "Testimonials Title", name: "testimonials_title", widget: "string", default: "What Clients Say" }
+          - { label: "Testimonials Subtitle", name: "testimonials_subtitle", widget: "string", default: "Testimonials" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+          - { label: "Contact Title", name: "contact_title", widget: "string", default: "Contact Me" }
+          - { label: "Contact Description", name: "contact_description", widget: "text", default: "I would love to get suggestions from you." }
+          - { label: "Contact Button", name: "contact_button", widget: "string", default: "Send It" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Contact Email", name: "contact_email", widget: "string", default: "contact@yourwebsite.com" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Los Angeles" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Los Angeles" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Luna. HTML Template by: TemplatesJungle" }
+  - name: "agenda"
+    label: "Agenda Page"
+    files:
+      - file: "content/agenda.json"
+        label: "Agenda Page Content"
+        name: "agenda"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Agenda" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Plan jouw fotosessie in overleg" }
+          - { label: "Availability Title", name: "availability_title", widget: "string", default: "Mijn Beschikbaarheid" }
+          - { label: "Availability Description", name: "availability_description", widget: "text", default: "Ik plan fotosessies flexibel in overleg, meestal in de weekenden of avonden. Neem contact op om een geschikte datum te vinden!" }
+          - { label: "Availability Button", name: "availability_button", widget: "string", default: "Boek een sessie" }
+          - { label: "Calendar Title", name: "calendar_title", widget: "string", default: "Kalenderoverzicht" }
+          - { label: "Calendar Description", name: "calendar_description", widget: "text", default: "Hieronder zie je een indicatie van mijn beschikbaarheid. Exacte data worden in overleg vastgesteld via het boekingformulier." }
+          - label: "Calendar Entries"
+            name: "calendar_entries"
+            widget: "list"
+            fields:
+              - { label: "Week", name: "week", widget: "string" }
+              - { label: "Monday", name: "monday", widget: "string", default: "Op aanvraag" }
+              - { label: "Tuesday", name: "tuesday", widget: "string", default: "Beschikbaar" }
+              - { label: "Wednesday", name: "wednesday", widget: "string", default: "Beschikbaar" }
+              - { label: "Thursday", name: "thursday", widget: "string", default: "Op aanvraag" }
+              - { label: "Friday", name: "friday", widget: "string", default: "Beschikbaar" }
+              - { label: "Saturday", name: "saturday", widget: "string", default: "Beschikbaar" }
+              - { label: "Sunday", name: "sunday", widget: "string", default: "Op aanvraag" }
+          - { label: "Calendar Note", name: "calendar_note", widget: "text", default: "* Beschikbaarheid is indicatief. Neem contact op voor een exacte datum." }
+          - { label: "Calendar Button", name: "calendar_button", widget: "string", default: "Boek nu" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Contact Email", name: "contact_email", widget: "string", default: "contact@doorbellieslens.com" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Title", name: "office_title", widget: "string", default: "Where’s my office?" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Bolsward" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Bolsward" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle" }
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - file: "content/contact.json"
+        label: "Contact Page Content"
+        name: "contact"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Contact" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Laten we samen jouw momenten vastleggen" }
+          - { label: "Form Title", name: "form_title", widget: "string", default: "Neem Contact Op of Boek een Sessie" }
+          - { label: "Form Description", name: "form_description", widget: "text", default: "Vul het formulier in voor een vraag of om een fotosessie te boeken. Ik neem zo snel mogelijk contact met je op!" }
+          - { label: "Question Tab", name: "question_tab", widget: "string", default: "Vraag stellen" }
+          - { label: "Booking Tab", name: "booking_tab", widget: "string", default: "Boeking aanvragen" }
+          - { label: "Question Form Name Placeholder", name: "question_form_name", widget: "string", default: "Naam" }
+          - { label: "Question Form Email Placeholder", name: "question_form_email", widget: "string", default: "E-mailadres" }
+          - { label: "Question Form Phone Placeholder", name: "question_form_phone", widget: "string", default: "Telefoonnummer" }
+          - { label: "Question Form Message Placeholder", name: "question_form_message", widget: "string", default: "Bericht" }
+          - { label: "Question Form Button", name: "question_form_button", widget: "string", default: "Verstuur" }
+          - { label: "Booking Form Name Placeholder", name: "booking_form_name", widget: "string", default: "Naam" }
+          - { label: "Booking Form Email Placeholder", name: "booking_form_email", widget: "string", default: "E-mailadres" }
+          - { label: "Booking Form Phone Placeholder", name: "booking_form_phone", widget: "string", default: "Telefoonnummer" }
+          - { label: "Booking Form Package Placeholder", name: "booking_form_package", widget: "string", default: "Pakket" }
+          - { label: "Booking Form Package Prompt", name: "booking_form_package_prompt", widget: "string", default: "Kies een pakket" }
+          - label: "Booking Form Packages"
+            name: "booking_form_packages"
+            widget: "list"
+            fields:
+              - { label: "Package Name", name: "name", widget: "string" }
+          - { label: "Booking Form Message Placeholder", name: "booking_form_message", widget: "string", default: "Bericht" }
+          - { label: "Booking Form Note", name: "booking_form_note", widget: "text", default: "* Datum wordt in overleg vastgesteld na je aanvraag." }
+          - { label: "Booking Form Button", name: "booking_form_button", widget: "string", default: "Boeking Aanvragen" }
+          - { label: "Contact Details Title", name: "contact_details_title", widget: "string", default: "Contactgegevens" }
+          - { label: "Contact Details Description", name: "contact_details_description", widget: "text", default: "Je kunt mij ook bereiken via onderstaande gegevens of sociale media." }
+          - { label: "Email Label", name: "email_label", widget: "string", default: "E-mail" }
+          - { label: "Contact Email", name: "contact_email", widget: "string", default: "contact@doorbellieslens.com" }
+          - { label: "Phone Label", name: "phone_label", widget: "string", default: "Telefoon" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Address Label", name: "address_label", widget: "string", default: "Adres" }
+          - { label: "Contact Address", name: "contact_address", widget: "string", default: "2489 Locust Court, Bolsward" }
+          - { label: "FAQ Title", name: "faq_title", widget: "string", default: "Veelgestelde Vragen" }
+          - { label: "FAQ Description", name: "faq_description", widget: "text", default: "Hier vind je antwoorden op de meest gestelde vragen over mijn fotoshoots." }
+          - label: "FAQ Items"
+            name: "faq_items"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Get In Touch Email", name: "get_in_touch_email", widget: "string", default: "contact@doorbellieslens.com" }
+          - { label: "Get In Touch Phone", name: "get_in_touch_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Title", name: "office_title", widget: "string", default: "Where’s my office?" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Bolsward" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Bolsward" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle" }
+  - name: "portfolio"
+    label: "Portfolio Page"
+    files:
+      - file: "content/portfolio.json"
+        label: "Portfolio Page Content"
+        name: "portfolio"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Portfolio" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Explore My Photography Collections" }
+          - { label: "Section Title", name: "section_title", widget: "string", default: "Bekijk hier alle foto's" }
+          - { label: "Section Description", name: "section_description", widget: "text", default: "Hier komt text over de page te staan" }
+          - { label: "Portfolio Title", name: "portfolio_title", widget: "string", default: "Portfolio" }
+          - { label: "Portfolio Description", name: "portfolio_description", widget: "text", default: "Dit zijn mijn recente werken" }
+          - label: "Portfolio Filters"
+            name: "portfolio_filters"
+            widget: "list"
+            fields:
+              - { label: "Filter Name", name: "name", widget: "string" }
+          - label: "Portfolio Items"
+            name: "portfolio_items"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Tag", name: "tag", widget: "select", options: ["Alle", "Gezinsshoot", "Liefdesshoot", "Geboorte", "Newborn"] }
+          - { label: "Contact Title", name: "contact_title", widget: "string", default: "Contact Me" }
+          - { label: "Contact Description", name: "contact_description", widget: "text", default: "I would love to get suggestions from you." }
+          - { label: "Contact Form Name Placeholder", name: "contact_form_name", widget: "string", default: "Naam" }
+          - { label: "Contact Form Email Placeholder", name: "contact_form_email", widget: "string", default: "E-mailadres" }
+          - { label: "Contact Form Message Placeholder", name: "contact_form_message", widget: "string", default: "Bericht" }
+          - { label: "Contact Form Button", name: "contact_form_button", widget: "string", default: "Send It" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Get In Touch Email", name: "get_in_touch_email", widget: "string", default: "contact@yourwebsite.com" }
+          - { label: "Get In Touch Phone", name: "get_in_touch_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Title", name: "office_title", widget: "string", default: "Where’s my office?" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Los Angeles" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Los Angeles" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Luna. HTML Template by: TemplatesJungle" }
+  - name: "prijzen"
+    label: "Prijzen Page"
+    files:
+      - file: "content/prijzen.json"
+        label: "Prijzen Page Content"
+        name: "prijzen"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Prijzen" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Kies het perfecte pakket voor jouw herinneringen" }
+          - { label: "Packages Title", name: "packages_title", widget: "string", default: "Onze Fotografie Pakketten" }
+          - { label: "Packages Description", name: "packages_description", widget: "text", default: "Kies een pakket dat past bij jouw wensen. Elk pakket is ontworpen om jouw speciale momenten prachtig vast te leggen." }
+          - label: "Packages"
+            name: "packages"
+            widget: "list"
+            fields:
+              - { label: "Package Title", name: "title", widget: "string" }
+              - { label: "Package Price", name: "price", widget: "string" }
+              - { label: "Package Description", name: "description", widget: "text" }
+              - label: "Package Details"
+                name: "details"
+                widget: "list"
+                fields:
+                  - { label: "Detail", name: "detail", widget: "string" }
+              - { label: "Package Button", name: "button", widget: "string", default: "Boek nu" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Contact Email", name: "contact_email", widget: "string", default: "contact@doorbellieslens.com" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Title", name: "office_title", widget: "string", default: "Where’s my office?" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Bolsward" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Bolsward" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle" }
+  - name: "wie-ben-ik"
+    label: "Wie Ben Ik Page"
+    files:
+      - file: "content/wie-ben-ik.json"
+        label: "Wie Ben Ik Page Content"
+        name: "wie-ben-ik"
+        fields:
+          - { label: "Header Title", name: "header_title", widget: "string", default: "Wie ben ik" }
+          - { label: "Header Description", name: "header_description", widget: "text", default: "Ontmoet de fotograaf achter Doorbellieslens" }
+          - { label: "About Title", name: "about_title", widget: "string", default: "Hoi, ik ben Elbrich!" }
+          - { label: "About Description 1", name: "about_description_1", widget: "text", default: "Ik ben een gepassioneerde fotograaf uit Bolsward, met een liefde voor het vastleggen van echte, pure momenten. Of het nu gaat om een gezellige gezinsshoot, een romantische liefdesshoot, een bijzondere geboorte, of een tedere newborn-sessie, ik vind het prachtig om jullie verhaal te vertellen door mijn lens." }
+          - { label: "About Description 2", name: "about_description_2", widget: "text", default: "Mijn stijl is warm, natuurlijk en tijdloos. Ik geloof dat de mooiste foto’s ontstaan uit spontaniteit en oprechte emoties. Met mijn camera wil ik niet alleen mooie beelden maken, maar ook herinneringen die je voor altijd koestert." }
+          - { label: "About Description 3", name: "about_description_3", widget: "text", default: "In mijn vrije tijd geniet ik van wandelingen in de natuur, een goede kop koffie en het ontdekken van nieuwe plekken die inspireren. Ik kijk ernaar uit om samen met jou iets moois te creëren!" }
+          - { label: "About Button", name: "about_button", widget: "string", default: "Neem contact op" }
+          - { label: "Get In Touch Title", name: "get_in_touch_title", widget: "string", default: "Get In Touch" }
+          - { label: "Contact Email", name: "contact_email", widget: "string", default: "contact@doorbellieslens.com" }
+          - { label: "Contact Phone", name: "contact_phone", widget: "string", default: "(355)-202-234-0457" }
+          - { label: "Office Title", name: "office_title", widget: "string", default: "Where’s my office?" }
+          - { label: "Office Address 1", name: "office_address_1", widget: "string", default: "2489 Locust Court, Bolsward" }
+          - { label: "Office Address 2", name: "office_address_2", widget: "string", default: "3927 Red Maple Drive, Bolsward" }
+          - { label: "Social Links Title", name: "social_links_title", widget: "string", default: "My social links" }
+          - label: "Social Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string", default: "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle" }

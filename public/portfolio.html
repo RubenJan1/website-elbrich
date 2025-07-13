@@ -496,6 +496,76 @@
 	<script type="text/javascript" src="assets/js/plugins.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 
+	    <script>
+        async function loadContent() {
+            try {
+                const response = await fetch('/content/portfolio.json');
+                const data = await response.json();
+
+                // Header
+                document.getElementById('header_title').textContent = data.header_title;
+                document.getElementById('header_description').textContent = data.header_description;
+
+                // Section
+                document.getElementById('section_title').textContent = data.section_title;
+                document.getElementById('section_description').textContent = data.section_description;
+
+                // Portfolio
+                document.getElementById('portfolio_title').textContent = data.portfolio_title;
+                document.getElementById('portfolio_description').textContent = data.portfolio_description;
+                const filtersContainer = document.getElementById('portfolio_filters_container');
+                data.portfolio_filters.forEach(filter => {
+                    const filterElement = document.createElement('a');
+                    filterElement.href = '#';
+                    filterElement.textContent = filter.name;
+                    filtersContainer.appendChild(filterElement);
+                });
+                const itemsContainer = document.getElementById('portfolio_items_container');
+                data.portfolio_items.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.innerHTML = `
+                        <div>
+                            <img src="${item.image}" alt="${item.tag}">
+                            <p>${item.tag}</p>
+                        </div>
+                    `;
+                    itemsContainer.appendChild(itemDiv);
+                });
+
+                // Contact
+                document.getElementById('contact_title').textContent = data.contact_title;
+                document.getElementById('contact_description').textContent = data.contact_description;
+                document.getElementById('contact_form_name').placeholder = data.contact_form_name;
+                document.getElementById('contact_form_email').placeholder = data.contact_form_email;
+                document.getElementById('contact_form_message').placeholder = data.contact_form_message;
+                document.getElementById('contact_form_button').textContent = data.contact_form_button;
+
+                // Get In Touch
+                document.getElementById('get_in_touch_title').textContent = data.get_in_touch_title;
+                document.getElementById('get_in_touch_email').textContent = data.get_in_touch_email;
+                document.getElementById('get_in_touch_phone').textContent = data.get_in_touch_phone;
+                document.getElementById('office_title').textContent = data.office_title;
+                document.getElementById('office_address_1').textContent = data.office_address_1;
+                document.getElementById('office_address_2').textContent = data.office_address_2;
+                document.getElementById('social_links_title').textContent = data.social_links_title;
+                const socialLinksContainer = document.getElementById('social_links_container');
+                data.social_links.forEach(link => {
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link.url;
+                    linkElement.textContent = link.platform;
+                    socialLinksContainer.appendChild(linkElement);
+                });
+
+                // Footer
+                document.getElementById('footer_text').textContent = data.footer_text;
+            } catch (error) {
+                console.error('Error loading content:', error);
+            }
+        }
+
+        window.onload = loadContent;
+    </script>
+
 </body>
 
 </html>

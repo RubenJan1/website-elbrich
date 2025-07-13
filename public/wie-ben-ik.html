@@ -136,5 +136,47 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+       <script>
+        async function loadContent() {
+            try {
+                const response = await fetch('/content/wie-ben-ik.json');
+                const data = await response.json();
+
+                // Header
+                document.getElementById('header_title').textContent = data.header_title;
+                document.getElementById('header_description').textContent = data.header_description;
+
+                // About Section
+                document.getElementById('about_title').textContent = data.about_title;
+                document.getElementById('about_description_1').textContent = data.about_description_1;
+                document.getElementById('about_description_2').textContent = data.about_description_2;
+                document.getElementById('about_description_3').textContent = data.about_description_3;
+                document.getElementById('about_button').textContent = data.about_button;
+
+                // Get In Touch
+                document.getElementById('get_in_touch_title').textContent = data.get_in_touch_title;
+                document.getElementById('contact_email').textContent = data.contact_email;
+                document.getElementById('contact_phone').textContent = data.contact_phone;
+                document.getElementById('office_title').textContent = data.office_title;
+                document.getElementById('office_address_1').textContent = data.office_address_1;
+                document.getElementById('office_address_2').textContent = data.office_address_2;
+                document.getElementById('social_links_title').textContent = data.social_links_title;
+                const socialLinksContainer = document.getElementById('social_links_container');
+                data.social_links.forEach(link => {
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link.url;
+                    linkElement.textContent = link.platform;
+                    socialLinksContainer.appendChild(linkElement);
+                });
+
+                // Footer
+                document.getElementById('footer_text').textContent = data.footer_text;
+            } catch (error) {
+                console.error('Error loading content:', error);
+            }
+        }
+
+        window.onload = loadContent;
+    </script>
 </body>
 </html>

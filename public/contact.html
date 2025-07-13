@@ -282,5 +282,88 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+        <script>
+        async function loadContent() {
+            try {
+                const response = await fetch('/content/contact.json');
+                const data = await response.json();
+
+                // Header
+                document.getElementById('header_title').textContent = data.header_title;
+                document.getElementById('header_description').textContent = data.header_description;
+
+                // Form Section
+                document.getElementById('form_title').textContent = data.form_title;
+                document.getElementById('form_description').textContent = data.form_description;
+                document.getElementById('question_tab').textContent = data.question_tab;
+                document.getElementById('booking_tab').textContent = data.booking_tab;
+                document.getElementById('question_form_name').placeholder = data.question_form_name;
+                document.getElementById('question_form_email').placeholder = data.question_form_email;
+                document.getElementById('question_form_phone').placeholder = data.question_form_phone;
+                document.getElementById('question_form_message').placeholder = data.question_form_message;
+                document.getElementById('question_form_button').textContent = data.question_form_button;
+                document.getElementById('booking_form_name').placeholder = data.booking_form_name;
+                document.getElementById('booking_form_email').placeholder = data.booking_form_email;
+                document.getElementById('booking_form_phone').placeholder = data.booking_form_phone;
+                document.getElementById('booking_form_package_prompt').textContent = data.booking_form_package_prompt;
+                const packageSelect = document.getElementById('booking_form_package');
+                data.booking_form_packages.forEach(pkg => {
+                    const option = document.createElement('option');
+                    option.value = pkg.name.toLowerCase().replace(/\s/g, '-');
+                    option.textContent = pkg.name;
+                    packageSelect.appendChild(option);
+                });
+                document.getElementById('booking_form_message').placeholder = data.booking_form_message;
+                document.getElementById('booking_form_note').textContent = data.booking_form_note;
+                document.getElementById('booking_form_button').textContent = data.booking_form_button;
+
+                // Contact Details
+                document.getElementById('contact_details_title').textContent = data.contact_details_title;
+                document.getElementById('contact_details_description').textContent = data.contact_details_description;
+                document.getElementById('email_label').textContent = data.email_label;
+                document.getElementById('contact_email').textContent = data.contact_email;
+                document.getElementById('phone_label').textContent = data.phone_label;
+                document.getElementById('contact_phone').textContent = data.contact_phone;
+                document.getElementById('address_label').textContent = data.address_label;
+                document.getElementById('contact_address').textContent = data.contact_address;
+
+                // FAQ
+                document.getElementById('faq_title').textContent = data.faq_title;
+                document.getElementById('faq_description').textContent = data.faq_description;
+                const faqContainer = document.getElementById('faq_items_container');
+                data.faq_items.forEach(item => {
+                    const faqDiv = document.createElement('div');
+                    faqDiv.innerHTML = `
+                        <h3>${item.question}</h3>
+                        <p>${item.answer}</p>
+                    `;
+                    faqContainer.appendChild(faqDiv);
+                });
+
+                // Get In Touch
+                document.getElementById('get_in_touch_title').textContent = data.get_in_touch_title;
+                document.getElementById('get_in_touch_email').textContent = data.get_in_touch_email;
+                document.getElementById('get_in_touch_phone').textContent = data.get_in_touch_phone;
+                document.getElementById('office_title').textContent = data.office_title;
+                document.getElementById('office_address_1').textContent = data.office_address_1;
+                document.getElementById('office_address_2').textContent = data.office_address_2;
+                document.getElementById('social_links_title').textContent = data.social_links_title;
+                const socialLinksContainer = document.getElementById('social_links_container');
+                data.social_links.forEach(link => {
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link.url;
+                    linkElement.textContent = link.platform;
+                    socialLinksContainer.appendChild(linkElement);
+                });
+
+                // Footer
+                document.getElementById('footer_text').textContent = data.footer_text;
+            } catch (error) {
+                console.error('Error loading content:', error);
+            }
+        }
+
+        window.onload = loadContent;
+    </script>
 </body>
 </html>
