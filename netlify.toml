@@ -13,7 +13,7 @@
 
 [[redirects]]
   from = "/admin"
-  to = "/admin/index.html"
+  to = "/.netlify/functions/___netlify-identity-auth"
   status = 200
   force = false
 
@@ -52,3 +52,8 @@
   to = "/wie-ben-ik.html"
   status = 200
   force = false
+
+[cms]
+  local_backend = true
+  publish_dir = "./"
+  config_path = "admin/config.yml"
