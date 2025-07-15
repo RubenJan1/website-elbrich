@@ -205,65 +205,62 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
-    <script>
-        async function loadContent() {
-            try {
-                const response = await fetch('/content/agenda.json');
-                const data = await response.json();
-
-                // Header
-                document.getElementById('header_title').textContent = data.header_title;
-                document.getElementById('header_description').textContent = data.header_description;
-
-                // Availability
-                document.getElementById('availability_title').textContent = data.availability_title;
-                document.getElementById('availability_description').textContent = data.availability_description;
-                document.getElementById('availability_button').textContent = data.availability_button;
-
-                // Calendar
-                document.getElementById('calendar_title').textContent = data.calendar_title;
-                document.getElementById('calendar_description').textContent = data.calendar_description;
-                document.getElementById('calendar_note').textContent = data.calendar_note;
-                document.getElementById('calendar_button').textContent = data.calendar_button;
-                const calendarContainer = document.getElementById('calendar_entries_container');
-                data.calendar_entries.forEach(entry => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${entry.monday}</td>
-                        <td>${entry.tuesday}</td>
-                        <td>${entry.wednesday}</td>
-                        <td>${entry.thursday}</td>
-                        <td>${entry.friday}</td>
-                        <td>${entry.saturday}</td>
-                        <td>${entry.sunday}</td>
-                    `;
-                    calendarContainer.appendChild(row);
-                });
-
-                // Get In Touch
-                document.getElementById('get_in_touch_title').textContent = data.get_in_touch_title;
-                document.getElementById('contact_email').textContent = data.contact_email;
-                document.getElementById('contact_phone').textContent = data.contact_phone;
-                document.getElementById('office_title').textContent = data.office_title;
-                document.getElementById('office_address_1').textContent = data.office_address_1;
-                document.getElementById('office_address_2').textContent = data.office_address_2;
-                document.getElementById('social_links_title').textContent = data.social_links_title;
-                const socialLinksContainer = document.getElementById('social_links_container');
-                data.social_links.forEach(link => {
-                    const linkElement = document.createElement('a');
-                    linkElement.href = link.url;
-                    linkElement.textContent = link.platform;
-                    socialLinksContainer.appendChild(linkElement);
-                });
-
-                // Footer
-                document.getElementById('footer_text').textContent = data.footer_text;
-            } catch (error) {
-                console.error('Error loading content:', error);
-            }
-        }
-
-        window.onload = loadContent;
-    </script>
+<script>
+    fetch('content/index.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('nav').innerHTML = `
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a>
+              <ul>
+                <li><a href="/portfolio.html#Gezinsshoot">Gezinsshoot</a></li>
+                <li><a href="/portfolio.html#Liefdesshoot">Liefdesshoot</a></li>
+                <li><a href="/portfolio.html#Geboorte">Geboorte</a></li>
+                <li><a href="/portfolio.html#Newborn">Newborn</a></li>
+              </ul>
+            </li>
+            <li><a href="/wie-ben-ik.html">Wie ben ik</a></li>
+            <li><a href="/prijzen.html">Prijzen</a></li>
+            <li><a href="/agenda.html">Agenda</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+          </ul>
+        `;
+      });
+    fetch('content/agenda.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('header').innerHTML = `
+          <h1>${data.header_title}</h1>
+          <p>${data.header_description}</p>
+        `;
+        document.getElementById('availability').innerHTML = `
+          <h2>${data.availability_title}</h2>
+          <p>${data.availability_description}</p>
+          <button>${data.availability_button}</button>
+        `;
+        document.getElementById('calendar').innerHTML = `
+          <h2>${data.calendar_title}</h2>
+          <p>${data.calendar_description}</p>
+          <table>
+            <tr><th>Ma</th><th>Di</th><th>Wo</th><th>Do</th><th>Vr</th><th>Za</th><th>Zo</th></tr>
+            ${data.calendar_entries.map(ce => `
+              <tr>
+                <td>${ce.monday}</td><td>${ce.tuesday}</td><td>${ce.wednesday}</td><td>${ce.thursday}</td><td>${ce.friday}</td><td>${ce.saturday}</td><td>${ce.sunday}</td>
+              </tr>
+            `).join('')}
+          </table>
+          <p>${data.calendar_note}</p>
+          <button>${data.calendar_button}</button>
+        `;
+        document.getElementById('footer').innerHTML = `
+          <div><h3>${data.get_in_touch_title}</h3><p>${data.contact_email}</p><p>${data.contact_phone}</p></div>
+          <div><h3>${data.office_title}</h3><p>${data.office_address_1}</p><p>${data.office_address_2}</p></div>
+          <div><h3>${data.social_links_title}</h3>${data.social_links.map(sl => `<a href="${sl.url}">${sl.platform}</a>`).join('')}</div>
+          <p>${data.footer_text}</p>
+        `;
+      });
+  </script>
 </body>
 </html>

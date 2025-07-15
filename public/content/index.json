@@ -10,35 +10,19 @@
   "projects_title": "Recent Projects",
   "projects_view_all": "Bekijk hier al mijn werk",
   "projects": [
-    { "category": "Design, Logo", "title": "Magazine front design" },
-    { "category": "Branding", "title": "Product Bottle Design" },
-    { "category": "Design", "title": "Magazine & brochure mockup" },
-    { "category": "Branding", "title": "Coffee bottle mockup" },
-    { "category": "Branding", "title": "Product tag mockup" },
-    { "category": "Branding", "title": "Perfume brand identity" },
-    { "category": "Branding", "title": "Coffee bottle mockup" },
-    { "category": "Branding", "title": "Product tag mockup" }
+    { "category": "Design", "title": "Magazine front design" },
+    { "category": "Branding", "title": "Product Bottle Design" }
   ],
   "services_title": "Diensten",
   "services": [
     { "title": "Portretsessies", "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie." },
-    { "title": "Huwelijksfotografie", "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's." },
-    { "title": "Evenementfotografie", "description": "Van feesten tot bedrijfsevenementen, ik leg de energie en sleutelmomenten naadloos vast." },
-    { "title": "Merkfotografie", "description": "Breng je merkverhaal tot leven met creatieve visuals en verhalende afbeeldingen." },
-    { "title": "Productfotografie", "description": "Presenteer je producten in het beste licht met hoogwaardige, gedetailleerde afbeeldingen." },
-    { "title": "Reisfotografie", "description": "Authentieke reiservaringen vastgelegd van over de hele wereld voor redactioneel of persoonlijk gebruik." },
-    { "title": "Fotobewerking", "description": "Verfijn en verbeter je foto's met professionele bewerkings- en retoucheerdiensten." },
-    { "title": "Maatwerkpakketten", "description": "Flexibele en op maat gemaakte fotografiepakkette om aan jouw specifieke projectbehoeften te voldoen." }
+    { "title": "Huwelijksfotografie", "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's." }
   ],
   "testimonials_title": "What Clients Say",
   "testimonials_subtitle": "Testimonials",
   "testimonials": [
-    { "quote": "Lorem ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.", "name": "Lucas Wolfer", "title": "Ceo - Raisins" },
-    { "quote": "Ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit amet, elit consectetur adipiscing.", "name": "Jennie", "title": "General Manager" },
-    { "quote": "Dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.", "name": "Simple", "title": "Staff" },
-    { "quote": "Lorem ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.", "name": "Lucas Wolfer", "title": "Ceo - Raisins" },
-    { "quote": "Ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit amet, elit consectetur adipiscing.", "name": "Jennie", "title": "General Manager" },
-    { "quote": "Dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Natura congue et dolor sit amet, elit consectetur adipiscing.", "name": "Simple", "title": "Staff" }
+    { "quote": "Lorem ipsum dolor sit amet...", "name": "Lucas Wolfer", "title": "Ceo - Raisins" },
+    { "quote": "Ipsum dolor sit amet...", "name": "Jennie", "title": "General Manager" }
   ],
   "contact_title": "Contact Me",
   "contact_description": "I would love to get suggestions from you.",
@@ -51,11 +35,7 @@
   "social_links_title": "My social links",
   "social_links": [
     { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
+    { "platform": "Instagram", "url": "#" }
   ],
   "footer_text": "© 2025 Luna. HTML Template by: TemplatesJungle"
 }

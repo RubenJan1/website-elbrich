@@ -1,16 +1,54 @@
 [build]
-  publish = "public"
-  functionsDirectory = ".netlify/functions"
-  
+  base = "./"
+  publish = "./"
+  command = ""
 
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
+[build.environment]
+  ASSETS_DIR = "assets/img"
 
 [[headers]]
-  for = "/admin/*"
+  for = "/assets/img/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
+    Cache-Control = "public, max-age=31536000"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/agenda"
+  to = "/agenda.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/prijzen"
+  to = "/prijzen.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/wie-ben-ik"
+  to = "/wie-ben-ik.html"
+  status = 200
+  force = false

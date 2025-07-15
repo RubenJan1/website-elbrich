@@ -8,39 +8,21 @@
       "title": "Basis Pakket",
       "price": "€150",
       "description": "Perfect voor een korte, maar mooie fotosessie.",
-      "details": [
-        "1 uur fotografie",
-        "10 bewerkte digitale foto’s",
-        "Online galerij",
-        "Keuze uit gezinsshoot of liefdesshoot"
-      ],
+      "details": ["1 uur fotografie", "10 bewerkte digitale foto’s", "Online galerij", "Keuze uit gezinsshoot of liefdesshoot"],
       "button": "Boek nu"
     },
     {
       "title": "Standaard Pakket",
       "price": "€250",
       "description": "Een uitgebreide sessie voor onvergetelijke momenten.",
-      "details": [
-        "2 uur fotografie",
-        "20 bewerkte digitale foto’s",
-        "Online galerij",
-        "Keuze uit gezinsshoot, liefdesshoot of newborn",
-        "1 locatie naar keuze"
-      ],
+      "details": ["2 uur fotografie", "20 bewerkte digitale foto’s", "Online galerij", "Keuze uit gezinsshoot, liefdesshoot of newborn", "1 locatie naar keuze"],
       "button": "Boek nu"
     },
     {
       "title": "Luxe Pakket",
       "price": "€400",
       "description": "Voor wie het allerbeste wil, inclusief extra’s.",
-      "details": [
-        "3 uur fotografie",
-        "30 bewerkte digitale foto’s",
-        "Online galerij",
-        "Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn",
-        "Meerdere locaties mogelijk",
-        "Luxe fotoalbum (20x20 cm)"
-      ],
+      "details": ["3 uur fotografie", "30 bewerkte digitale foto’s", "Online galerij", "Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn", "Meerdere locaties mogelijk", "Luxe fotoalbum (20x20 cm)"],
       "button": "Boek nu"
     }
   ],
@@ -51,13 +33,6 @@
   "office_address_1": "2489 Locust Court, Bolsward",
   "office_address_2": "3927 Red Maple Drive, Bolsward",
   "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
-  ],
+  "social_links": [],
   "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
 }

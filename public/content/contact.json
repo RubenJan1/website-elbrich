@@ -34,22 +34,8 @@
   "faq_title": "Veelgestelde Vragen",
   "faq_description": "Hier vind je antwoorden op de meest gestelde vragen over mijn fotoshoots.",
   "faq_items": [
-    {
-      "question": "Hoe boek ik een fotosessie?",
-      "answer": "Vul het boekingformulier in met je voorkeuren, of stuur een e-mail naar contact@doorbellieslens.com. Ik neem binnen 48 uur contact met je op om de details te bespreken."
-    },
-    {
-      "question": "Zijn reiskosten inbegrepen?",
-      "answer": "Reiskosten binnen 20 km van Bolsward zijn inbegrepen. Daarbuiten geldt een tarief van €0,30 per km."
-    },
-    {
-      "question": "Hoe ontvang ik mijn foto’s?",
-      "answer": "Je ontvangt de bewerkte foto’s binnen 2-3 weken via een persoonlijke online galerij, waar je ze kunt downloaden."
-    },
-    {
-      "question": "Kan ik een sessie annuleren?",
-      "answer": "Annuleren kan kosteloos tot 48 uur voor de sessie. Neem contact op via e-mail of telefoon om je boeking te wijzigen."
-    }
+    { "question": "Hoe boek ik een fotosessie?", "answer": "Vul het boekingformulier in met je voorkeuren, of stuur een e-mail naar contact@doorbellieslens.com. Ik neem binnen 48 uur contact met je op om de details te bespreken." },
+    { "question": "Zijn reiskosten inbegrepen?", "answer": "Reiskosten binnen 20 km van Bolsward zijn inbegrepen. Daarbuiten geldt een tarief van €0,30 per km." }
   ],
   "get_in_touch_title": "Get In Touch",
   "get_in_touch_email": "contact@doorbellieslens.com",
@@ -58,15 +44,6 @@
   "office_address_1": "2489 Locust Court, Bolsward",
   "office_address_2": "3927 Red Maple Drive, Bolsward",
   "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
-  ],
- 
-
+  "social_links": [],
   "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
 }

@@ -13,10 +13,8 @@
     { "name": "Newborn" }
   ],
   "portfolio_items": [
-    { "image": "/images/uploads/portfolio1.jpg", "tag": "Gezinsshoot" },
-    { "image": "/images/uploads/portfolio2.jpg", "tag": "Liefdesshoot" },
-    { "image": "/images/uploads/portfolio3.jpg", "tag": "Geboorte" },
-    { "image": "/images/uploads/portfolio4.jpg", "tag": "Newborn" }
+    { "image": "assets/img/portfolio-1.jpg", "tag": "Gezinsshoot" },
+    { "image": "assets/img/portfolio-2.jpg", "tag": "Liefdesshoot" }
   ],
   "contact_title": "Contact Me",
   "contact_description": "I would love to get suggestions from you.",
@@ -31,13 +29,6 @@
   "office_address_1": "2489 Locust Court, Los Angeles",
   "office_address_2": "3927 Red Maple Drive, Los Angeles",
   "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
-  ],
+  "social_links": [],
   "footer_text": "© 2025 Luna. HTML Template by: TemplatesJungle"
 }

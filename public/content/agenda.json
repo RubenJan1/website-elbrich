@@ -7,46 +7,7 @@
   "calendar_title": "Kalenderoverzicht",
   "calendar_description": "Hieronder zie je een indicatie van mijn beschikbaarheid. Exacte data worden in overleg vastgesteld via het boekingformulier.",
   "calendar_entries": [
-    {
-      "week": "Week 1",
-      "monday": "Op aanvraag",
-      "tuesday": "Beschikbaar",
-      "wednesday": "Beschikbaar",
-      "thursday": "Op aanvraag",
-      "friday": "Beschikbaar",
-      "saturday": "Beschikbaar",
-      "sunday": "Op aanvraag"
-    },
-    {
-      "week": "Week 2",
-      "monday": "Op aanvraag",
-      "tuesday": "Beschikbaar",
-      "wednesday": "Beschikbaar",
-      "thursday": "Op aanvraag",
-      "friday": "Beschikbaar",
-      "saturday": "Beschikbaar",
-      "sunday": "Op aanvraag"
-    },
-    {
-      "week": "Week 3",
-      "monday": "Op aanvraag",
-      "tuesday": "Beschikbaar",
-      "wednesday": "Beschikbaar",
-      "thursday": "Op aanvraag",
-      "friday": "Beschikbaar",
-      "saturday": "Beschikbaar",
-      "sunday": "Op aanvraag"
-    },
-    {
-      "week": "Week 4",
-      "monday": "Op aanvraag",
-      "tuesday": "Beschikbaar",
-      "wednesday": "Beschikbaar",
-      "thursday": "Op aanvraag",
-      "friday": "Beschikbaar",
-      "saturday": "Beschikbaar",
-      "sunday": "Op aanvraag"
-    }
+    { "week": "Week 1", "monday": "Op aanvraag", "tuesday": "Beschikbaar", "wednesday": "Beschikbaar", "thursday": "Op aanvraag", "friday": "Beschikbaar", "saturday": "Beschikbaar", "sunday": "Op aanvraag" }
   ],
   "calendar_note": "* Beschikbaarheid is indicatief. Neem contact op voor een exacte datum.",
   "calendar_button": "Boek nu",
@@ -57,13 +18,6 @@
   "office_address_1": "2489 Locust Court, Bolsward",
   "office_address_2": "3927 Red Maple Drive, Bolsward",
   "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
-  ],
+  "social_links": [],
   "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
 }

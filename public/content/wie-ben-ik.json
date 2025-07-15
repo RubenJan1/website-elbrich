@@ -13,13 +13,6 @@
   "office_address_1": "2489 Locust Court, Bolsward",
   "office_address_2": "3927 Red Maple Drive, Bolsward",
   "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Twitter", "url": "#" },
-    { "platform": "Instagram", "url": "#" },
-    { "platform": "LinkedIn", "url": "#" },
-    { "platform": "Pinterest", "url": "#" },
-    { "platform": "YouTube", "url": "#" }
-  ],
+  "social_links": [],
   "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
 }
