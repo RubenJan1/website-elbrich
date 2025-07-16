@@ -1,41 +1,138 @@
 {
-  "header_title": "Doorbellieslens - Fotografie",
-  "header_location": "Bolsward, NL",
-  "header_description": "Gun jezelf een moment voor jou. Een shoot waarin je even stilstaat, straalt en voelt: dit ben ik. Een Liefde voor jezelf shoot mag je altijd boeken omdat jij het waard bent om gezien te worden.",
-  "header_button": "Huur mij in",
-  "about_title": "Over mij",
-  "about_description_1": "Hello! I’m Luna, a passionate freelance photographer with a love for capturing emotion, light, and storytelling through the lens. Whether it's serene landscapes, candid portraits, or styled editorial shots — I aim to freeze time and create timeless visual experiences.",
-  "about_description_2": "With a deep appreciation for natural light and minimal aesthetics, my work reflects a clean yet expressive style. I’m always inspired by the little details, the in-between moments, and the beauty found in everyday life. Let’s tell your story through photography.",
-  "about_button": "Meer over mij",
-  "projects_title": "Recent Projects",
-  "projects_view_all": "Bekijk hier al mijn werk",
-  "projects": [
-    { "category": "Design", "title": "Magazine front design" },
-    { "category": "Branding", "title": "Product Bottle Design" }
-  ],
-  "services_title": "Diensten",
-  "services": [
-    { "title": "Portretsessies", "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie." },
-    { "title": "Huwelijksfotografie", "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's." }
-  ],
-  "testimonials_title": "What Clients Say",
-  "testimonials_subtitle": "Testimonials",
-  "testimonials": [
-    { "quote": "Lorem ipsum dolor sit amet...", "name": "Lucas Wolfer", "title": "Ceo - Raisins" },
-    { "quote": "Ipsum dolor sit amet...", "name": "Jennie", "title": "General Manager" }
-  ],
-  "contact_title": "Contact Me",
-  "contact_description": "I would love to get suggestions from you.",
-  "contact_button": "Send It",
-  "get_in_touch_title": "Get In Touch",
-  "contact_email": "contact@yourwebsite.com",
-  "contact_phone": "(355)-202-234-0457",
-  "office_address_1": "2489 Locust Court, Los Angeles",
-  "office_address_2": "3927 Red Maple Drive, Los Angeles",
-  "social_links_title": "My social links",
-  "social_links": [
-    { "platform": "Facebook", "url": "#" },
-    { "platform": "Instagram", "url": "#" }
-  ],
-  "footer_text": "© 2025 Luna. HTML Template by: TemplatesJungle"
+  "hero": {
+    "title": "Doorbellieslens - Fotografie",
+    "location": "Bolsward, NL",
+    "description": "Gun jezelf een moment voor jou. Een shoot waarin je even stilstaat, straalt en voelt: dit ben ik. Een Liefde voor jezelf shoot mag je altijd boeken omdat jij het waard bent om gezien te worden.",
+    "button": "Huur mij in"
+  },
+  "about": {
+    "title": "Over mij",
+    "description": "Hello! I’m Luna, a passionate freelance photographer with a love for capturing emotion, light, and storytelling through the lens. Whether it's serene landscapes, candid portraits, or styled editorial shots — I aim to freeze time and create timeless visual experiences.\n\nWith a deep appreciation for natural light and minimal aesthetics, my work reflects a clean yet expressive style. I’m always inspired by the little details, the in-between moments, and the beauty found in everyday life. Let’s tell your story through photography.",
+    "button": "Meer over mij"
+  },
+  "recent_projects": {
+    "title": "Recent Projects",
+    "view_all": "Bekijk hier al mijn werk",
+    "projects": [
+      {
+        "category": "Design, Logo",
+        "title": "Magazine front design"
+      },
+      {
+        "category": "Branding",
+        "title": "Product Bottle Design"
+      },
+      {
+        "category": "Design",
+        "title": "Magazine & brochure mockup"
+      },
+      {
+        "category": "Branding",
+        "title": "Coffee bottle mockup"
+      },
+      {
+        "category": "Branding",
+        "title": "Product tag mockup"
+      },
+      {
+        "category": "Branding",
+        "title": "Perfume brand identity"
+      },
+      {
+        "category": "Branding",
+        "title": "Coffee bottle mockup"
+      },
+      {
+        "category": "Branding",
+        "title": "Product tag mockup"
+      }
+    ]
+  },
+  "services": {
+    "title": "Diensten",
+    "items": [
+      {
+        "title": "Portretsessies",
+        "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie."
+      },
+      {
+        "title": "Huwelijksfotografie",
+        "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's."
+      },
+      {
+        "title": "Evenementfotografie",
+        "description": "Van feesten tot bedrijfsevenementen, ik leg de energie en sleutelmomenten naadloos vast."
+      },
+      {
+        "title": "Merkfotografie",
+        "description": "Breng je merkverhaal tot leven met creatieve visuals en verhalende afbeeldingen."
+      },
+      {
+        "title": "Productfotografie",
+        "description": "Presenteer je producten in het beste licht met hoogwaardige, gedetailleerde afbeeldingen."
+      },
+      {
+        "title": "Reisfotografie",
+        "description": "Authentieke reiservaringen vastgelegd van over de hele wereld voor redactioneel of persoonlijk gebruik."
+      },
+      {
+        "title": "Fotobewerking",
+        "description": "Verfijn en verbeter je foto's met professionele bewerkings- en retoucheerdiensten."
+      },
+      {
+        "title": "Maatwerkpakketten",
+        "description": "Flexibele en op maat gemaakte fotografiepakkette om aan jouw specifieke projectbehoeften te voldoen."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Clients Say",
+    "subtitle": "Testimonials",
+    "items": [
+      {
+        "quote": "Lorem ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Lucas Wolfer",
+        "position": "Ceo - Raisins"
+      },
+      {
+        "quote": "Ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Jennie",
+        "position": "General Manager"
+      },
+      {
+        "quote": "Dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Simple",
+        "position": "Staff"
+      },
+      {
+        "quote": "Lorem ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Lucas Wolfer",
+        "position": "Ceo - Raisins"
+      },
+      {
+        "quote": "Ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Jennie",
+        "position": "General Manager"
+      },
+      {
+        "quote": "Dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Natura congue et dolor sit amet, elit consectetur adipiscing.",
+        "author": "Simple",
+        "position": "Staff"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "I would love to get suggestions from you.",
+    "button": "Send It"
+  },
+  "contact_info": {
+    "title": "Neem contact op",
+    "email": "contact@Doorbellieslens.nl",
+    "email_link_text": "Neem hier contact op",
+    "legal_title": "Wettelijk informatie",
+    "kvk": "KVK nummer: ",
+    "privacy_policy": "Privacybeleid",
+    "social_title": "Volg mij op sociale media"
+  }
 }
