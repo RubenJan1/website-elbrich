@@ -1,49 +1,28 @@
 {
-  "header_title": "Contact",
-  "header_description": "Laten we samen jouw momenten vastleggen",
+  "title": "Contact",
+  "subtitle": "Laten we samen jouw momenten vastleggen",
   "form_title": "Neem Contact Op of Boek een Sessie",
-  "form_description": "Vul het formulier in voor een vraag of om een fotosessie te boeken. Ik neem zo snel mogelijk contact met je op!",
-  "question_tab": "Vraag stellen",
-  "booking_tab": "Boeking aanvragen",
-  "question_form_name": "Naam",
-  "question_form_email": "E-mailadres",
-  "question_form_phone": "Telefoonnummer",
-  "question_form_message": "Bericht",
-  "question_form_button": "Verstuur",
-  "booking_form_name": "Naam",
-  "booking_form_email": "E-mailadres",
-  "booking_form_phone": "Telefoonnummer",
-  "booking_form_package": "Pakket",
-  "booking_form_package_prompt": "Kies een pakket",
-  "booking_form_packages": [
-    { "name": "Basis Pakket (€150)" },
-    { "name": "Standaard Pakket (€250)" },
-    { "name": "Luxe Pakket (€400)" }
-  ],
-  "booking_form_message": "Bericht",
-  "booking_form_note": "* Datum wordt in overleg vastgesteld na je aanvraag.",
-  "booking_form_button": "Boeking Aanvragen",
-  "contact_details_title": "Contactgegevens",
-  "contact_details_description": "Je kunt mij ook bereiken via onderstaande gegevens of sociale media.",
-  "email_label": "E-mail",
+  "form_text": "Vul het formulier in voor een vraag of om een fotosessie te boeken. Ik neem zo snel mogelijk contact met je op!",
   "contact_email": "contact@doorbellieslens.com",
-  "phone_label": "Telefoon",
   "contact_phone": "(355)-202-234-0457",
-  "address_label": "Adres",
   "contact_address": "2489 Locust Court, Bolsward",
   "faq_title": "Veelgestelde Vragen",
-  "faq_description": "Hier vind je antwoorden op de meest gestelde vragen over mijn fotoshoots.",
-  "faq_items": [
-    { "question": "Hoe boek ik een fotosessie?", "answer": "Vul het boekingformulier in met je voorkeuren, of stuur een e-mail naar contact@doorbellieslens.com. Ik neem binnen 48 uur contact met je op om de details te bespreken." },
-    { "question": "Zijn reiskosten inbegrepen?", "answer": "Reiskosten binnen 20 km van Bolsward zijn inbegrepen. Daarbuiten geldt een tarief van €0,30 per km." }
-  ],
-  "get_in_touch_title": "Get In Touch",
-  "get_in_touch_email": "contact@doorbellieslens.com",
-  "get_in_touch_phone": "(355)-202-234-0457",
-  "office_title": "Where’s my office?",
-  "office_address_1": "2489 Locust Court, Bolsward",
-  "office_address_2": "3927 Red Maple Drive, Bolsward",
-  "social_links_title": "My social links",
-  "social_links": [],
-  "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
+  "faqs": [
+    {
+      "question": "Hoe boek ik een fotosessie?",
+      "answer": "Vul het boekingformulier in met je voorkeuren, of stuur een e-mail naar contact@doorbellieslens.com. Ik neem binnen 48 uur contact met je op om de details te bespreken."
+    },
+    {
+      "question": "Zijn reiskosten inbegrepen?",
+      "answer": "Reiskosten binnen 20 km van Bolsward zijn inbegrepen. Daarbuiten geldt een tarief van €0,30 per km."
+    },
+    {
+      "question": "Hoe ontvang ik mijn foto’s?",
+      "answer": "Je ontvangt de bewerkte foto’s binnen 2-3 weken via een persoonlijke online galerij, waar je ze kunt downloaden."
+    },
+    {
+      "question": "Kan ik een sessie annuleren?",
+      "answer": "Annuleren kan kosteloos tot 48 uur voor de sessie. Neem contact op via e-mail of telefoon om je boeking te wijzigen."
+    }
+  ]
 }

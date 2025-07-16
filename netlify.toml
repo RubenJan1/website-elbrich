@@ -1,9 +1,24 @@
 [build]
-  publish = "public"
+  base = "./"
+  publish = "./"
   command = ""
-[dev]
-  port = 8888
-  targetPort = 3999
-  publish = "public"
-[[plugins]]
-  package = "@netlify/plugin-visual-editor"
+
+[build.environment]
+  ASSETS_DIR = "assets/img"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  force = false

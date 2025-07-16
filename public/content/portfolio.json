@@ -1,34 +1,20 @@
 {
-  "header_title": "Portfolio",
-  "header_description": "Explore My Photography Collections",
-  "section_title": "Bekijk hier alle foto's",
-  "section_description": "Hier komt text over de page te staan",
-  "portfolio_title": "Portfolio",
-  "portfolio_description": "Dit zijn mijn recente werken",
-  "portfolio_filters": [
-    { "name": "Alle" },
-    { "name": "Gezinsshoot" },
-    { "name": "Liefdesshoot" },
-    { "name": "Geboorte" },
-    { "name": "Newborn" }
-  ],
-  "portfolio_items": [
-    { "image": "assets/img/portfolio-1.jpg", "tag": "Gezinsshoot" },
-    { "image": "assets/img/portfolio-2.jpg", "tag": "Liefdesshoot" }
-  ],
-  "contact_title": "Contact Me",
-  "contact_description": "I would love to get suggestions from you.",
-  "contact_form_name": "Naam",
-  "contact_form_email": "E-mailadres",
-  "contact_form_message": "Bericht",
-  "contact_form_button": "Send It",
-  "get_in_touch_title": "Get In Touch",
-  "get_in_touch_email": "contact@yourwebsite.com",
-  "get_in_touch_phone": "(355)-202-234-0457",
-  "office_title": "Where’s my office?",
-  "office_address_1": "2489 Locust Court, Los Angeles",
-  "office_address_2": "3927 Red Maple Drive, Los Angeles",
-  "social_links_title": "My social links",
-  "social_links": [],
-  "footer_text": "© 2025 Luna. HTML Template by: TemplatesJungle"
+  "title": "Portfolio",
+  "subtitle": "Explore My Photography Collections",
+  "intro_title": "Bekijk hier alle foto's",
+  "intro_text": "Hier komt text over de page te staan",
+  "items": [
+    {
+      "image": "assets/img/portfolio1.jpg"
+    },
+    {
+      "image": "assets/img/portfolio2.jpg"
+    },
+    {
+      "image": "assets/img/portfolio3.jpg"
+    },
+    {
+      "image": "assets/img/portfolio4.jpg"
+    }
+  ]
 }

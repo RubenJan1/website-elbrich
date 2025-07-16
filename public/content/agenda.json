@@ -1,23 +1,8 @@
 {
-  "header_title": "Agenda",
-  "header_description": "Plan jouw fotosessie in overleg",
+  "title": "Agenda",
+  "subtitle": "Plan jouw fotosessie in overleg",
   "availability_title": "Mijn Beschikbaarheid",
-  "availability_description": "Ik plan fotosessies flexibel in overleg, meestal in de weekenden of avonden. Neem contact op om een geschikte datum te vinden!",
-  "availability_button": "Boek een sessie",
+  "availability_text": "Ik plan fotosessies flexibel in overleg, meestal in de weekenden of avonden. Neem contact op om een geschikte datum te vinden!",
   "calendar_title": "Kalenderoverzicht",
-  "calendar_description": "Hieronder zie je een indicatie van mijn beschikbaarheid. Exacte data worden in overleg vastgesteld via het boekingformulier.",
-  "calendar_entries": [
-    { "week": "Week 1", "monday": "Op aanvraag", "tuesday": "Beschikbaar", "wednesday": "Beschikbaar", "thursday": "Op aanvraag", "friday": "Beschikbaar", "saturday": "Beschikbaar", "sunday": "Op aanvraag" }
-  ],
-  "calendar_note": "* Beschikbaarheid is indicatief. Neem contact op voor een exacte datum.",
-  "calendar_button": "Boek nu",
-  "get_in_touch_title": "Get In Touch",
-  "contact_email": "contact@doorbellieslens.com",
-  "contact_phone": "(355)-202-234-0457",
-  "office_title": "Where’s my office?",
-  "office_address_1": "2489 Locust Court, Bolsward",
-  "office_address_2": "3927 Red Maple Drive, Bolsward",
-  "social_links_title": "My social links",
-  "social_links": [],
-  "footer_text": "© 2025 Doorbellieslens. HTML Template by: TemplatesJungle"
+  "calendar_note": "* Beschikbaarheid is indicatief. Neem contact op voor een exacte datum."
 }
