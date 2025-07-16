@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('CMS.js: Start loading content from /public/content/index.json');
+    console.log('CMS.js: Start loading content from /content/index.json');
     
     fetch('/content/index.json')
         .then(response => {
@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Contact Info Section
             const contactInfoTitle = document.getElementById('contact-info-title');
             const contactInfoEmail = document.getElementById('contact-info-email');
+            const contactInfoEmailLinkText = document.getElementById('contact-info-email-link-text');
             const contactInfoLegalTitle = document.getElementById('contact-info-legal-title');
             const contactInfoKvk = document.getElementById('contact-info-kvk');
             const contactInfoPrivacyPolicy = document.getElementById('contact-info-privacy-policy');
@@ -101,6 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (contactInfoEmail) {
                 contactInfoEmail.textContent = data.contact_info.email || '';
                 contactInfoEmail.href = `mailto:${data.contact_info.email || ''}`;
+            }
+            if (contactInfoEmailLinkText) {
+                contactInfoEmailLinkText.textContent = data.contact_info.email_link_text || '';
+                contactInfoEmailLinkText.href = `mailto:${data.contact_info.email || ''}`;
             }
             if (contactInfoLegalTitle) contactInfoLegalTitle.textContent = data.contact_info.legal_title || '';
             if (contactInfoKvk) contactInfoKvk.textContent = data.contact_info.kvk || '';
