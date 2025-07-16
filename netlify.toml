@@ -1,59 +1,9 @@
 [build]
-  base = "./"
-  publish = "./"
+  publish = "public"
   command = ""
-
-[build.environment]
-  ASSETS_DIR = "assets/img"
-
-[[headers]]
-  for = "/assets/img/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
-
-[[redirects]]
-  from = "/admin"
-  to = "/.netlify/functions/___netlify-identity-auth"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/"
-  to = "/index.html"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/agenda"
-  to = "/agenda.html"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/portfolio"
-  to = "/portfolio.html"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/prijzen"
-  to = "/prijzen.html"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/wie-ben-ik"
-  to = "/wie-ben-ik.html"
-  status = 200
-  force = false
-
-[cms]
-  local_backend = true
-  publish_dir = "./"
-  config_path = "admin/config.yml"
+[dev]
+  port = 8888
+  targetPort = 3999
+  publish = "public"
+[[plugins]]
+  package = "@netlify/plugin-visual-editor"
