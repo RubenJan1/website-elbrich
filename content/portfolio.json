@@ -1,0 +1,26 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Explore My Photography Collections",
+  "categories": [
+    {
+      "name": "Alle",
+      "items": []
+    },
+    {
+      "name": "Gezinsshoot",
+      "items": []
+    },
+    {
+      "name": "Liefdesshoot",
+      "items": []
+    },
+    {
+      "name": "Geboorte",
+      "items": []
+    },
+    {
+      "name": "Newborn",
+      "items": []
+    }
+  ]
+}

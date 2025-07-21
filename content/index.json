@@ -1,9 +1,56 @@
 {
-  "hero_title": "Geen idee wat dit doet",
-  "hero_subtitle": "Test",
-  "hero_text": "N﻿og een test",
-  "about_title": "Dan nog eeb",
-  "about_text": "w﻿eawakjdawfewfqw",
-  "services_title": "dwqdwqfqwfqef",
-  "testimonials_title": "qefeqfqefqfeqfeq"
+  "title": "Home",
+  "subtitle": "Doorbellieslens - Fotografie",
+  "intro_text": "Bolsward, NL\nGun jezelf een moment voor jou. Een shoot waarin je even stilstaat, straalt en voelt: dit ben ik. Een Liefde voor jezelf shoot mag je altijd boeken omdat jij het waard bent om gezien te worden.",
+  "services": [
+    {
+      "title": "Portretsessies",
+      "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie."
+    },
+    {
+      "title": "Huwelijksfotografie",
+      "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's."
+    },
+    {
+      "title": "Evenementfotografie",
+      "description": "Van feesten tot bedrijfsevenementen, ik leg de energie en sleutelmomenten naadloos vast."
+    },
+    {
+      "title": "Merkfotografie",
+      "description": "Breng je merkverhaal tot leven met creatieve visuals en verhalende afbeeldingen."
+    },
+    {
+      "title": "Productfotografie",
+      "description": "Presenteer je producten in het beste licht met hoogwaardige, gedetailleerde afbeeldingen."
+    },
+    {
+      "title": "Reisfotografie",
+      "description": "Authentieke reiservaringen vastgelegd van over de hele wereld voor redactioneel of persoonlijk gebruik."
+    },
+    {
+      "title": "Fotobewerking",
+      "description": "Verfijn en verbeter je foto's met professionele bewerkings- en retoucheerdiensten."
+    },
+    {
+      "title": "Maatwerkpakketten",
+      "description": "Flexibele en op maat gemaakte fotografiepakkette om aan jouw specifieke projectbehoeften te voldoen."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Lorem ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+      "author": "Lucas Wolfer",
+      "role": "Ceo - Raisins"
+    },
+    {
+      "quote": "Ipsum dolor sit amet, elit consectetur adipiscing. Odio tincidunt et turpis nec dolor posuere tempus Nulla congue et dolor sit amet, elit consectetur adipiscing.",
+      "author": "Jennie",
+      "role": "General Manager"
+    },
+    {
+      "quote": "Dolor sit amet, elit consectetur adipiscing. Odio tincidunt et, massa, turpis nec dolor posuere tempus. Natura congue et dolor sit amet, elit consectetur adipiscing.",
+      "author": "Simple",
+      "role": "Staff"
+    }
+  ]
 }

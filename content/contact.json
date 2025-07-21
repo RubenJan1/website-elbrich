@@ -1,13 +1,12 @@
 {
   "title": "Contact",
   "subtitle": "Laten we samen jouw momenten vastleggen",
-  "form_title": "Neem Contact Op of Boek een Sessie",
-  "form_text": "Vul het formulier in voor een vraag of om een fotosessie te boeken. Ik neem zo snel mogelijk contact met je op!",
-  "contact_email": "contact@doorbellieslens.com",
-  "contact_phone": "(355)-202-234-0457",
-  "contact_address": "2489 Locust Court, Bolsward",
-  "faq_title": "Veelgestelde Vragen",
-  "faqs": [
+  "contact_info": {
+    "email": "contact@doorbellieslens.com",
+    "phone": "(355)-202-234-0457",
+    "address": "2489 Locust Court, Bolsward"
+  },
+  "faq": [
     {
       "question": "Hoe boek ik een fotosessie?",
       "answer": "Vul het boekingformulier in met je voorkeuren, of stuur een e-mail naar contact@doorbellieslens.com. Ik neem binnen 48 uur contact met je op om de details te bespreken."

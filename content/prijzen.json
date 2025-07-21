@@ -3,7 +3,7 @@
   "subtitle": "Kies het perfecte pakket voor jouw herinneringen",
   "packages": [
     {
-      "title": "Basis Pakket",
+      "name": "Basis Pakket",
       "price": "€150",
       "description": "Perfect voor een korte, maar mooie fotosessie.",
       "features": [
@@ -11,10 +11,11 @@
         "10 bewerkte digitale foto’s",
         "Online galerij",
         "Keuze uit gezinsshoot of liefdesshoot"
-      ]
+      ],
+      "button": "Boek nu"
     },
     {
-      "title": "Standaard Pakket",
+      "name": "Standaard Pakket",
       "price": "€250",
       "description": "Een uitgebreide sessie voor onvergetelijke momenten.",
       "features": [
@@ -23,10 +24,11 @@
         "Online galerij",
         "Keuze uit gezinsshoot, liefdesshoot of newborn",
         "1 locatie naar keuze"
-      ]
+      ],
+      "button": "Boek nu"
     },
     {
-      "title": "Luxe Pakket",
+      "name": "Luxe Pakket",
       "price": "€400",
       "description": "Voor wie het allerbeste wil, inclusief extra’s.",
       "features": [
@@ -36,7 +38,8 @@
         "Keuze uit gezinsshoot, liefdesshoot, geboorte of newborn",
         "Meerdere locaties mogelijk",
         "Luxe fotoalbum (20x20 cm)"
-      ]
+      ],
+      "button": "Boek nu"
     }
   ]
 }
