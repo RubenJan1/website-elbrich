@@ -1,108 +1,157 @@
 backend:
   name: git-gateway
-  branch: main # Verander dit naar jouw Git-branch (bijv. main of master)
+  branch: main # Pas dit aan naar je branch (main of master)
 
-media_folder: "images" # Map waar geüploade media (zoals foto's) worden opgeslagen
-public_folder: "/images" # Publieke URL voor media
+media_folder: "assets/img" # Waar afbeeldingen worden opgeslagen
+public_folder: "/assets/img" # Publieke pad voor afbeeldingen
 
 collections:
-  - name: "index"
+  # Index pagina
+  - name: "home"
     label: "Home"
-    folder: "content"
-    create: true
+    folder: "content/home"
+    create: false # Geen nieuwe items, alleen één bestand
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Intro Text", name: "intro_text", widget: "text" }
-      - label: "Services"
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - { label: "Beschrijving", name: "description", widget: "text" }
+      - { label: "Knoptekst", name: "button_text", widget: "string" }
+      - { label: "Over mij - Titel", name: "about_title", widget: "string" }
+      - { label: "Over mij - Beschrijving", name: "about_description", widget: "text" }
+      - { label: "Over mij - Knoptekst", name: "about_button_text", widget: "string" }
+      - label: "Recente Projecten"
+        name: "recent_projects"
+        widget: "list"
+        fields:
+          - { label: "Categorie", name: "category", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Afbeelding", name: "image", widget: "image" }
+      - label: "Diensten"
         name: "services"
         widget: "list"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "text" }
+          - { label: "Afbeelding", name: "image", widget: "image", required: false }
       - label: "Testimonials"
         name: "testimonials"
         widget: "list"
         fields:
           - { label: "Quote", name: "quote", widget: "text" }
-          - { label: "Author", name: "author", widget: "string" }
-          - { label: "Role", name: "role", widget: "string" }
+          - { label: "Auteur", name: "author", widget: "string" }
+          - { label: "Functie", name: "role", widget: "string" }
 
+  # Portfolio pagina
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - { label: "Beschrijving", name: "description", widget: "text" }
+      - label: "Portfolio Items"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Afbeelding", name: "image", widget: "image" }
+          - { label: "Categorie", name: "category", widget: "select", options: ["Alle", "Gezinsshoot", "Liefdesshoot", "Geboorte", "Newborn"] }
+          - { label: "Titel", name: "title", widget: "string" }
+
+  # Wie ben ik pagina
+  - name: "about"
+    label: "Wie ben ik"
+    folder: "content/about"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - { label: "Beschrijving", name: "description", widget: "text" }
+      - { label: "Knoptekst", name: "button_text", widget: "string" }
+
+  # Prijzen pagina
+  - name: "pricing"
+    label: "Prijzen"
+    folder: "content/pricing"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - label: "Pakketten"
+        name: "packages"
+        widget: "list"
+        fields:
+          - { label: "Naam", name: "name", widget: "string" }
+          - { label: "Prijs", name: "price", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "text" }
+          - label: "Kenmerken"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Kenmerk", name: "feature", widget: "string" }
+          - { label: "Knoptekst", name: "button_text", widget: "string" }
+
+  # Agenda pagina
+  - name: "agenda"
+    label: "Agenda"
+    folder: "content/agenda"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - { label: "Beschikbaarheid Tekst", name: "availability_text", widget: "text" }
+      - { label: "Knoptekst", name: "button_text", widget: "string" }
+      - label: "Kalenderoverzicht"
+        name: "calendar"
+        widget: "list"
+        fields:
+          - { label: "Weeknummer", name: "week", widget: "string" }
+          - { label: "Maandag", name: "monday", widget: "string" }
+          - { label: "Dinsdag", name: "tuesday", widget: "string" }
+          - { label: "Woensdag", name: "wednesday", widget: "string" }
+          - { label: "Donderdag", name: "thursday", widget: "string" }
+          - { label: "Vrijdag", name: "friday", widget: "string" }
+          - { label: "Zaterdag", name: "saturday", widget: "string" }
+          - { label: "Zondag", name: "sunday", widget: "string" }
+
+  # Contact pagina
   - name: "contact"
     label: "Contact"
-    folder: "content"
-    create: true
+    folder: "content/contact"
+    create: false
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - label: "Contact Info"
-        name: "contact_info"
-        widget: "object"
-        fields:
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Phone", name: "phone", widget: "string" }
-          - { label: "Address", name: "address", widget: "string" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Ondertitel", name: "subtitle", widget: "string" }
+      - { label: "Contact Intro", name: "contact_intro", widget: "text" }
+      - { label: "E-mail", name: "email", widget: "string" }
+      - { label: "Telefoon", name: "phone", widget: "string" }
+      - { label: "Adres", name: "address", widget: "string" }
       - label: "FAQ"
         name: "faq"
         widget: "list"
         fields:
-          - { label: "Question", name: "question", widget: "string" }
-          - { label: "Answer", name: "answer", widget: "text" }
+          - { label: "Vraag", name: "question", widget: "string" }
+          - { label: "Antwoord", name: "answer", widget: "text" }
 
-  - name: "prijzen"
-    label: "Prijzen"
-    folder: "content"
-    create: true
+  # Algemene instellingen (zoals footer)
+  - name: "settings"
+    label: "Instellingen"
+    folder: "content/settings"
+    create: false
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - label: "Packages"
-        name: "packages"
+      - { label: "Contact E-mail", name: "contact_email", widget: "string" }
+      - { label: "KVK Nummer", name: "kvk_number", widget: "string" }
+      - { label: "Copyright Tekst", name: "copyright_text", widget: "string" }
+      - label: "Sociale Media"
+        name: "social_media"
         widget: "list"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Price", name: "price", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - label: "Features"
-            name: "features"
-            widget: "list"
-          - { label: "Button Text", name: "button", widget: "string" }
-
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "content"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
-        fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - label: "Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
-
-  - name: "agenda"
-    label: "Agenda"
-    folder: "content"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - label: "Availability"
-        name: "availability"
-        widget: "text"
-
-  - name: "wie-ben-ik"
-    label: "Wie ben ik"
-    folder: "content"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Platform", name: "platform", widget: "select", options: ["Instagram", "Facebook", "Twitter", "Pinterest", "YouTube", "Dribbble"] }
+          - { label: "URL", name: "url", widget: "string" }
