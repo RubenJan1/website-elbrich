@@ -8,76 +8,76 @@
   "about_button_text": "Meer over mij",
   "recent_projects": [
     {
+      "image": "/assets/img/project1.jpg",
       "category": "Design, Logo",
-      "title": "Magazine front design",
-      "image": "/assets/img/project1.jpg"
+      "title": "Magazine front design"
     },
     {
+      "image": "/assets/img/project2.jpg",
       "category": "Branding",
-      "title": "Product Bottle Design",
-      "image": "/assets/img/project2.jpg"
+      "title": "Product Bottle Design"
     },
     {
+      "image": "/assets/img/project3.jpg",
       "category": "Design",
-      "title": "Magazine & brochure mockup",
-      "image": "/assets/img/project3.jpg"
+      "title": "Magazine & brochure mockup"
     },
     {
+      "image": "/assets/img/project4.jpg",
       "category": "Branding",
-      "title": "Coffee bottle mockup",
-      "image": "/assets/img/project4.jpg"
+      "title": "Coffee bottle mockup"
     },
     {
+      "image": "/assets/img/project5.jpg",
       "category": "Branding",
-      "title": "Product tag mockup",
-      "image": "/assets/img/project5.jpg"
+      "title": "Product tag mockup"
     },
     {
+      "image": "/assets/img/project6.jpg",
       "category": "Branding",
-      "title": "Perfume brand identity",
-      "image": "/assets/img/project6.jpg"
+      "title": "Perfume brand identity"
     }
   ],
   "services": [
     {
+      "image": "/assets/img/service1.jpg",
       "title": "Portretsessies",
-      "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie.",
-      "image": "/assets/img/service1.jpg"
+      "description": "Vang je persoonlijkheid met professionele en expressieve portretfotografie."
     },
     {
+      "image": "/assets/img/service2.jpg",
       "title": "Huwelijksfotografie",
-      "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's.",
-      "image": "/assets/img/service2.jpg"
+      "description": "Leg je speciale dag prachtig vast met spontane en artistieke huwelijksfoto's."
     },
     {
+      "image": "/assets/img/service3.jpg",
       "title": "Evenementfotografie",
-      "description": "Van feesten tot bedrijfsevenementen, ik leg de energie en sleutelmomenten naadloos vast.",
-      "image": "/assets/img/service3.jpg"
+      "description": "Van feesten tot bedrijfsevenementen, ik leg de energie en sleutelmomenten naadloos vast."
     },
     {
+      "image": "/assets/img/service4.jpg",
       "title": "Merkfotografie",
-      "description": "Breng je merkverhaal tot leven met creatieve visuals en verhalende afbeeldingen.",
-      "image": "/assets/img/service4.jpg"
+      "description": "Breng je merkverhaal tot leven met creatieve visuals en verhalende afbeeldingen."
     },
     {
+      "image": "/assets/img/service5.jpg",
       "title": "Productfotografie",
-      "description": "Presenteer je producten in het beste licht met hoogwaardige, gedetailleerde afbeeldingen.",
-      "image": "/assets/img/service5.jpg"
+      "description": "Presenteer je producten in het beste licht met hoogwaardige, gedetailleerde afbeeldingen."
     },
     {
+      "image": "/assets/img/service6.jpg",
       "title": "Reisfotografie",
-      "description": "Authentieke reiservaringen vastgelegd van over de hele wereld voor redactioneel of persoonlijk gebruik.",
-      "image": "/assets/img/service6.jpg"
+      "description": "Authentieke reiservaringen vastgelegd van over de hele wereld voor redactioneel of persoonlijk gebruik."
     },
     {
+      "image": "/assets/img/service7.jpg",
       "title": "Fotobewerking",
-      "description": "Verfijn en verbeter je foto's met professionele bewerkings- en retoucheerdiensten.",
-      "image": "/assets/img/service7.jpg"
+      "description": "Verfijn en verbeter je foto's met professionele bewerkings- en retoucheerdiensten."
     },
     {
+      "image": "/assets/img/service8.jpg",
       "title": "Maatwerkpakketten",
-      "description": "Flexibele en op maat gemaakte fotografiepakkette om aan jouw specifieke projectbehoeften te voldoen.",
-      "image": "/assets/img/service8.jpg"
+      "description": "Flexibele en op maat gemaakte fotografiepakkette om aan jouw specifieke projectbehoeften te voldoen."
     }
   ],
   "testimonials": [
